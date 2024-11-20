@@ -1,0 +1,143 @@
+1
+import java.util.Scanner;
+
+public class Decoder {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine(); // Read the input string of 1's and 0's
+        sc.close();
+
+        // Decode the string
+        String decodedWord = decode(input);
+        System.out.println(decodedWord);
+    }
+
+    private static String decode(String input) {
+        String[] segments = input.split("1"); // Split by '1'
+        StringBuilder decoded = new StringBuilder();
+
+        for (String segment : segments) {
+            int length = segment.length();
+            if (length > 0 && length <= 26) { // Ensure the length is valid
+                // Calculate the corresponding character
+                char letter = (char) ('Z' - (length - 1));
+                decoded.append(letter);
+            }
+        }
+
+        return decoded.toString();
+    }
+}
+2
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class ReverseWords {
+    public static String reverseWords(String sentence, int caseOption) {
+        String[] words = sentence.split("\\s+"); // Split by whitespace, including commas
+        StringBuilder reversedSentence = new StringBuilder();
+
+        for (String word : words) {
+            char[] chars = word.toCharArray();
+            char[] a=word.toCharArray();
+            int start = 0, end = chars.length - 1;
+
+            // Reverse word characters
+            while (start < end) {
+                char temp = chars[start];
+                chars[start] = chars[end];
+                chars[end] = temp;
+                start++;
+                end--;
+            }
+            int index=chars.length;
+            if (caseOption == 1) {
+                for (int i = 0; i < chars.length; i++) {
+                    if (Character.isLetter(chars[i])&&i!=index) {
+                        chars[i] = Character.isUpperCase(a[i]) ? Character.toUpperCase(chars[i]) : Character.toLowerCase(chars[i]);
+                    }
+                    else  if(!Character.isLetter(chars[i])&&!Character.isWhitespace(chars[i])){
+                        char c=a[i];
+                        String d=String.valueOf(chars);
+                        index=d.indexOf(c);
+                        if(index!=-1)
+                        chars[index]=a[i];
+                          
+                      }
+               
+                    
+                }
+            }
+
+            reversedSentence.append(String.valueOf(chars)).append(" ");
+        }
+        return reversedSentence.toString().trim();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String sentence = scanner.nextLine();
+        int caseOption = scanner.nextInt();
+        String reversedSentence = reverseWords(sentence, caseOption);
+        System.out.println(reversedSentence);
+    }
+}
+
+3
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class CommonCharacterASCII {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        String input1 = scanner.nextLine();
+        char[] charArray1 = input1.replace(" ", "").toCharArray(); // Convert to char array
+
+        // Prompt the user for the second input
+        
+        String input2 = scanner.nextLine();
+        char[] charArray2 = input2.replace(" ", "").toCharArray(); // Convert to char array
+
+        // Calculate the result
+        int result = calculateSingleDigitSum(charArray1, charArray2);
+        System.out.println( result); // Display the result
+
+        scanner.close();
+    }
+
+    public static int calculateSingleDigitSum(char[] input1, char[] input2) {
+        // Step 1: Find common characters
+        HashSet<Character> commonChars = new HashSet<>();
+        for (char c1 : input1) {
+            for (char c2 : input2) {
+                if (c1 == c2) {
+                    commonChars.add(c1);
+                }
+            }
+        }
+
+        // Step 2: Calculate the sum of ASCII values of common characters
+        int sum1 = 0;
+        for (char c : commonChars) {
+            sum1 += (int) c; // Get ASCII value
+        }
+
+        // Step 3: Calculate single digit sum
+        return getSingleDigit(sum1);
+    }
+
+    private static int getSingleDigit(int sum) {
+        while (sum >= 10) {
+            int tempSum = 0;
+            while (sum > 0) {
+                tempSum += sum % 10; // Add last digit
+                sum /= 10; // Remove last digit
+            }
+            sum = tempSum; // Update sum to the new sum of digits
+        }
+        return sum;
+    }
+}
