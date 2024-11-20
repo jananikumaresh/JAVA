@@ -1,0 +1,1220 @@
+Here is a method definition:
+
+int compute( int a, double y ){ . . . .}
+
+Which of the following has a different signature?
+
+
+
+Question 1Answer
+
+a.
+int compute( int sum, double value ){ . . . .} 
+
+
+b.
+double compute( int sum, double y ){ . . . .}
+
+
+c.
+int compute( int a, int y ){ . . . .}
+
+
+d.
+double compute( int a, double y ){ . . . .}
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is a method’s signature?
+
+Question 2Answer
+
+a.
+The signature of a method is the name of the method and the names of its parameters
+
+
+b.
+The signature of a method is the name of the method, its parameter list, and its return type. 
+
+
+c.
+The signature of a method is the name of the method and the type of its return value. 
+
+
+d.
+The signature of a method is the name of the method and the data types of its parameters.
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. long test( int x, float y) {
+
+2.
+
+3. }
+
+Which one of the following line inserted at line 2 would not compile?
+
+
+
+Question 3Answer
+
+a.
+return (long) y; 
+
+
+b.
+return x / 7; 
+
+
+c.
+return (int) 3.14d; 
+
+
+d.
+return ( y / x );
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following is generally a valid definition of an application’s main() method ?
+
+Question 4Answer
+
+a.
+public static void main( String args ); 
+
+
+b.
+public static void main(); 
+
+
+c.
+public static void main( Graphics g ); 
+
+
+d.
+public static void main( String [] args );
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is the general scheme for a class definition:
+
+Question 5Answer
+
+a.
+Class ClassName
+
+{
+
+  // Description of the instance variables.
+
+
+
+  // Description of the constructors.
+
+
+
+  // Description of the methods.
+
+}
+
+
+
+
+b.
+class ClassName
+
+{
+
+  public static void main ( String[] args )
+
+  {
+
+     // entire program goes here
+
+
+
+  }
+
+
+
+}
+
+
+
+
+c.
+class ClassName
+
+{
+
+  // Description of the instance variables.
+
+
+
+  // Description of the constructors.
+
+
+
+  // Description of the methods.
+
+}
+
+
+
+
+d.
+ClassName
+
+{
+
+  // Description of the instance variables.
+
+
+
+  // Description of the constructors.
+
+
+
+  // Description of the methods.
+
+}
+
+
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Here is the general syntax for method definition:
+
+accessModifier returnType methodName( parameterList )
+
+{
+
+  Java statements
+
+
+
+  return returnValue;
+
+}
+
+What is true for the returnType and the returnValue?
+
+
+
+Question 6Answer
+
+a.
+The returnValue must be the same type as the returnType, or be of a type that can be converted to returnType without loss of information.
+
+
+b.
+The returnValue must be exactly the same type as the returnType.
+
+
+c.
+The returnValue can be any type, but will be automatically converted to returnType when the method returns to the caller.
+
+
+d.
+If the returnType is void then the returnValue can be any type.
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What term is used for hiding the details of an object from the other parts of a program?
+
+Question 7Answer
+
+a.
+Obfustication
+
+
+b.
+Data Mining
+
+
+c.
+Compilation
+
+
+d.
+Encapsulation
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What attributes do all real world objects have?
+
+Question 8Answer
+
+a.
+Objects have state and behavior.
+
+
+b.
+Objects have size and weight.
+
+
+c.
+Objects have identity, state, and behavior.
+
+
+d.
+Objects have existence.
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What attributes do all Software objects have?
+
+Question 9Answer
+
+a.
+Software objects have variables and storage.
+
+
+b.
+Software objects have RAM, ROM, and processors.
+
+
+c.
+Software objects have identity, state, and behavior.
+
+
+d.
+Software objects are made of computer components.
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+When you run a Java application by typing java someClass what is the first method that starts?
+
+Question 10Answer
+
+a.
+The main() method of someClass.
+
+
+b.
+The run() method someClass.
+
+
+c.
+The someClass method.
+
+
+d.
+The applet method.
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is a class?
+
+Question 11Answer
+
+a.
+A class is a description of a kind of object.
+
+
+b.
+A class is a section of computer memory containing objects.
+
+
+c.
+A class is a section of the hard disk reserved for object oriented programs.
+
+
+d.
+A class is the part of an object that contains the variables.
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is another name for creating an object?
+
+Question 12Answer
+
+a.
+instantiation
+
+
+b.
+inheritance
+
+
+c.
+insubordination
+
+
+d.
+initialization
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How many objects of a given class may be constructed in an application?
+
+Question 13Answer
+
+a.
+As many as the application asks for.
+
+
+b.
+Only one per class.
+
+
+c.
+One object per variable.
+
+
+d.
+Only one per constructor.
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following invokes the method length() of the object str and stores the result in val?
+
+Question 14Answer
+
+a.
+val = length( str );
+
+
+b.
+val = length.str()
+
+
+c.
+val = length().str
+
+
+d.
+val = str.length()
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is an actual parameter?
+
+Question 15Answer
+
+a.
+The value that is returned by a method.
+
+
+b.
+The value that is passed into a method by a caller.
+
+
+c.
+The identifier used in a method to stand for the value that is passed into a method by a caller.
+
+
+d.
+A variable used to control a counting loop.
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Each object of the class contains its own copy of instance variables.
+
+Question 16Answer
+
+a.
+False
+
+
+b.
+True
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Can you say that behaviour of an object is similar to method of the class?
+
+Question 17Answer
+
+a.
+False
+
+
+b.
+True
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+public class Test1 {
+
+ int i = 10;
+
+ public static void main(String[] args) {
+
+  int i = 50;
+
+  System.out.println(i);
+
+  Test1 obj = new Test1();
+
+  obj.printNumber(obj.i);
+
+ }
+
+ public void printNumber(int i) {
+
+  System.out.println(i);
+
+ }
+
+}
+
+
+
+What will be the output?
+
+
+
+Question 18Answer
+
+a.
+Compilation error because of duplicate variable
+
+
+b.
+50
+
+50
+
+
+c.
+Compilation error because static method is accessing nonstatic data member
+
+
+d.
+50
+
+10
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+class Test {
+
+ int x = 20;
+
+
+
+ void display(int x) {
+
+  System.out.println(x);
+
+  System.out.println(this.x);
+
+ }
+
+
+
+ public static void main(String[] args) {
+
+  Test t = new Test();
+
+  t.display(30);
+
+ }
+
+
+
+}
+
+
+
+What is the output of the above program?
+
+
+
+Question 19Answer
+
+a.
+20
+
+30
+
+
+b.
+30
+
+30
+
+
+c.
+20
+
+20
+
+
+d.
+30
+
+20
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the widest valid returnType for method A in line 3?
+
+
+
+public class ReturnIt {
+
+ returnType methodA(byte x, double y) /* Line 3 */
+
+ {
+
+  return (long) x / y * z;
+
+ }
+
+}
+
+
+
+Question 20Answer
+
+a.
+double
+
+
+b.
+float
+
+
+c.
+int
+
+
+d.
+long
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What are not the characteristics of object?
+
+Question 21Answer
+
+a.
+behaviours
+
+
+b.
+identity
+
+
+c.
+state
+
+
+d.
+variables
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of the following program?
+
+
+
+public class Employee {
+
+ public String firstName;
+
+ public String lastName;
+
+ public int age;
+
+ public char gender;
+
+
+
+ public Employee(String firstNameForThisObject, String lastNameForThisObject, char gender) {
+
+  firstName = firstNameForThisObject;
+
+  lastName = lastNameForThisObject;
+
+  gender = gender;
+
+ }
+
+
+
+ public static void main(String[] args) {
+
+  Employee employee = new Employee("firstNameForThisObject", "lastNameForThisObject", 'M');
+
+  System.out.println("first name is:" + employee.firstName);
+
+  System.out.println("last name is:" + employee.lastName);
+
+  System.out.println("age is:" + employee.age);
+
+  System.out.println("gender is:" + employee.gender);
+
+ }
+
+}
+
+
+
+Question 22Answer
+
+a.
+Runtime error
+
+
+b.
+first name is:firstNameForThisObject
+
+last name is:lastNameForThisObject
+
+age is:0
+
+gender is:M
+
+
+
+
+c.
+Compilation error
+
+
+d.
+first name is:firstNameForThisObject
+
+last name is:lastNameForThisObject
+
+age is:0
+
+gender is:
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+You read the following statement in a Java program that compiles and executes. 
+
+submarine.dive(depth);
+
+
+
+Question 23Answer
+
+a.
+submarine must be a method
+
+
+b.
+dive must be the name of an instance field
+
+
+c.
+dive must be a method.
+
+
+d.
+depth must be an int
+
+
+e.
+submarine must be the name of a interface
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following statement is TRUE with respect to class and members of a class?
+
+Question 24Answer
+
+a.
+It is mandatory to specify return type along with the method definition in a class.
+
+
+b.
+It is mandatory to use an access specifier along with declaration statement of a member variable
+
+
+c.
+It is mandatory to initialize member variables while declaring them in a class.
+
+
+d.
+It is mandatory for every class to declare a main() method inside it.
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+There can be more than one java class in same file if. 
+
+Question 25Answer
+
+a.
+All classes are having public access modifier
+
+
+b.
+Only 1 class has public access modifier and has the same name as the .java file
+
+
+c.
+All classes are having protected access modifier
+
+
+d.
+All the classes are having private access modifier
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How many references can there be to a single object?
+
+Question 26Answer
+
+a.
+Two: one in a caller and one in the called method.
+
+
+b.
+Three: the original reference, and one reference each for a formal and an actual parameter.
+
+
+c.
+Only one.
+
+
+d.
+There can be any number of references, held in any number of variables and parameters (as long as they are of the correct type.)
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the stored in the object obj in following lines of code?
+
+box obj;
+
+
+
+Question 27Answer
+
+a.
+Any arbitrary pointer
+
+
+b.
+Memory address of allocated memory of object
+
+
+c.
+NULL
+
+
+d.
+Garbage
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these keywords is used to make a class?
+
+Question 28Answer
+
+a.
+struct
+
+
+b.
+class
+
+
+c.
+None of the mentioned
+
+
+d.
+int
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is a valid declaration of an object of class Box?
+
+Question 29Answer
+
+a.
+Box obj = new Box();
+
+
+b.
+obj = new Box();
+
+
+c.
+new Box obj;
+
+
+d.
+
+
+
+e.
+Box obj = new Box;
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these operators is used to allocate memory for an object?
+
+Question 30Answer
+
+a.
+give
+
+
+b.
+new
+
+
+c.
+alloc
+
+
+d.
+malloc
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these statement is incorrect?
+
+Question 31Answer
+
+a.
+Every class must contain a main() method
+
+
+b.
+main() method must be made public
+
+
+c.
+There can be only one main() method in a program
+
+
+d.
+Applets do not require a main() method at all
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+    class main_class 
+
+    {
+
+        public static void main(String args[])
+
+        {
+
+            int x = 9;
+
+            if (x == 9) 
+
+            { 
+
+                int x = 8;
+
+                System.out.println(x);
+
+            }
+
+        } 
+
+    }
+
+
+
+Question 32Answer
+
+a.
+8
+
+
+b.
+9
+
+
+c.
+Compilation Error
+
+
+d.
+Runtime Error
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+    class box 
+
+    {
+
+        int width;
+
+        int height;
+
+        int length;
+
+    } 
+
+    class mainclass 
+
+    {
+
+        public static void main(String args[]) 
+
+        {        
+
+             box obj = new box();
+
+             obj.width = 10;
+
+             obj.height = 2;
+
+             obj.length = 10;
+
+             int y = obj.width * obj.height * obj.length; 
+
+             System.out.printYes;
+
+        } 
+
+    }
+
+
+
+Question 33Answer
+
+a.
+400
+
+
+b.
+100
+
+
+c.
+12
+
+
+d.
+200
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+    class box 
+
+    {
+
+        int width;
+
+        int height;
+
+        int length;
+
+    } 
+
+    class mainclass 
+
+    {
+
+        public static void main(String args[]) 
+
+        {        
+
+            box obj1 = new box();
+
+            box obj2 = new box();
+
+            obj1.height = 1;
+
+            obj1.length = 2;
+
+            obj1.width = 1;
+
+            obj2 = obj1;
+
+            System.out.println(obj2.height);
+
+        } 
+
+    }
+
+
+
+Question 34Answer
+
+a.
+2
+
+
+b.
+1
+
+
+c.
+Runtime error
+
+
+d.
+Garbage Value
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+   class box 
+
+   {
+
+        int width;
+
+        int height;
+
+        int length;
+
+   } 
+
+    class mainclass 
+
+    {
+
+        public static void main(String args[]) 
+
+        {        
+
+            box obj = new box();
+
+            System.out.println(obj);
+
+        } 
+
+    }
+
+
+
+Question 35Answer
+
+a.
+0
+
+
+b.
+1
+
+
+c.
+Runtime error
+
+
+d.
+classname@hashcode in hexadecimal form
