@@ -1,0 +1,79 @@
+1
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args){
+        ArrayList<Integer> arr=new ArrayList<>();
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        for(int i=0;i<a;i++)arr.add(sc.nextInt());
+        System.out.println("ArrayList: "+arr);
+        System.out.println("First : "+arr.get(0)+", Last : "+arr.get(a-1));
+       
+    }
+}
+2
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Prog {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i < n; i++)
+            list.add(sc.nextInt());
+
+        // printing initial value ArrayList
+        System.out.println("ArrayList: " + list);
+
+        // Replacing the element at index 1 with 100
+        if (list.size() > 1) {
+            list.set(1, 100);
+        }
+
+        // Getting the index of first occurrence of 100
+        System.out.println("Index of 100 = " + list.indexOf(100));
+
+        // Getting the index of last occurrence of 100
+        System.out.println("LastIndex of 100 = " + list.lastIndexOf(100));
+
+        // Check whether 200 is in the list or not
+        System.out.println(list.contains(200));
+
+        // Print ArrayList size
+        System.out.println("Size Of ArrayList = " + list.size());
+
+        // Inserting 500 at index 1
+        list.add(1, 500);
+
+        // Removing an element from position 3
+        if (list.size() > 3) {
+            list.remove(3);
+        }
+
+        System.out.print("ArrayList: " + list);
+        sc.close();
+    }
+}
+3
+import java.util.*;
+public class Main{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        sc.nextLine();
+        ArrayList<String> arr=new ArrayList<>();
+        for(int i=0;i<a;i++)arr.add(sc.nextLine());
+        System.out.println("List before reversing :");
+        System.out.println(arr);
+        System.out.println("List after reversing :");
+        Collections.reverse(arr);
+        System.out.println(arr);
+    }
+}
