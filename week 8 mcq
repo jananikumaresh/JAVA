@@ -1,0 +1,1499 @@
+Question 1
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the result of attempting to compile and run the following program?
+
+public class Polymorphism {
+
+ public static void main(String[] args) {
+
+  A ref1 = new C();
+
+  B ref2 = (B) (ref1);
+
+  System.out.println(ref2.f());
+
+ }
+
+}
+
+
+
+class A {
+
+ int f() {
+
+  return 0;
+
+ }
+
+}
+
+
+
+class B extends A {
+
+ int f() {
+
+  return 1;
+
+ }
+
+}
+
+
+
+class C extends B {
+
+ int f() {
+
+  return 2;
+
+ }
+
+}
+
+
+
+Question 1Answer
+
+a.
+The program will compile without error and print 1 when run. 
+
+
+b.
+The program will compile without error, but will throw a ClassCastException when run. 
+
+
+c.
+The program will fail to compile. 
+
+
+d.
+The program will compile without error and print 2 when run.
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+class Foo {
+
+    String doStuff(int x) { return "hello"; }
+
+}
+
+Which method would not be legal in a subclass of Foo?
+
+
+
+Question 2Answer
+
+a.
+String doStuff(int x) { return "hello"; } 
+
+
+b.
+int doStuff(int x) { return 42; }
+
+
+c.
+public String doStuff(int x) { return "Hello"; } 
+
+
+d.
+protected String doStuff(int x) { return "Hello"; } 
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+1. class Over {
+
+2.     int doStuff(int a, float B. {
+
+3.         return 7;
+
+4.     }
+
+5. }
+
+6.
+
+7. class Over2 extends Over {
+
+8.     // insert code here
+
+9. }
+
+Which method, if inserted at line 8, will not compile?
+
+
+
+Question 3Answer
+
+a.
+private int doStuff(int x, double y) { return 4; } 
+
+
+b.
+private int doStuff(int x, float y) {return 4; }
+
+
+c.
+protected int doStuff(int x, float y) {return 4; } 
+
+
+d.
+public int doStuff(int x, float y) { return 4; } 
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. public class TestOverload {
+
+2.
+
+3.     public void process() {
+
+4.     }
+
+5.
+
+6.     public String process() {
+
+7.         return "hello";
+
+8.     }
+
+9.
+
+10.    public float process(int x) {
+
+11.        return 67.5f;
+
+12.    }
+
+13.}
+
+What is the result?
+
+
+
+Question 4Answer
+
+a.
+Compilation fails because of an error in line 6.
+
+
+b.
+Compilation fails because of an error in line 10. 
+
+
+c.
+An exception is thrown at runtime. 
+
+
+d.
+Compilation succeeds and no runtime errors with class TestOverload occur. 
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Can an abstract class define both abstract methods and non-abstract methods?
+
+Question 5Answer
+
+a.
+No-it must have all one or the other. 
+
+
+b.
+Yes-but the child classes do not inherit the abstract methods. 
+
+
+c.
+No-it must have all abstract methods. 
+
+
+d.
+Yes-the child classes inherit both.
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which declaration prevents creating a subclass of a top level class?
+
+Question 6Answer
+
+a.
+private class Javacg{} 
+
+
+b.
+final public class Javacg{}
+
+
+c.
+abstract public class Javacg{} 
+
+
+d.
+final abstract class Javacg{} 
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following statement is false?
+
+Question 7Answer
+
+a.
+A subclass must override all the methods of the superclass.
+
+
+b.
+It is possible for a subclass to define a method with the same name and parameters as a method defined by the superclass. 
+
+
+c.
+Inheritance defines a is-a relationship between a superclass and its subclasses. 
+
+
+d.
+Aggregation defines a has-a relationship between a superclass and its subclasses. 
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+abstract class Shape {
+
+    public abstract void draw();
+
+}
+
+public class Circle extends Shape {
+
+    public void draw() { }
+
+}
+
+Which one of the following statement is correct?
+
+
+
+Question 8Answer
+
+a.
+Shape s = new Circle();
+
+s->draw();
+
+
+
+
+b.
+Shape s = new Shape();
+
+s.draw(); 
+
+
+
+
+c.
+Circle c = new Shape();
+
+c.draw(); 
+
+
+
+
+d.
+Shape s = new Circle();
+
+s.draw();
+
+
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+A class Car and its subclass Yugo both have a method run() which was written by the programmer as part of the class definition. If junker refers to an object of type Yugo, what will the following code do?
+
+junker.run();
+
+
+
+Question 9Answer
+
+a.
+The run() method defined in Yugo will be called.
+
+
+b.
+Overloading will be used to pick which run() is called. 
+
+
+c.
+The compiler will complain that run() has been defined twice. 
+
+
+d.
+The run() method defined in Car will be called. 
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+    abstract class A 
+
+    {
+
+        int i;
+
+        abstract void display();
+
+    }    
+
+    class B extends A 
+
+    {
+
+        int j;
+
+        void display() 
+
+        {
+
+            System.out.println(j);
+
+        }
+
+    }    
+
+    class Abstract_demo 
+
+    {
+
+        public static void main(String args[])
+
+        {
+
+            B obj = new B();
+
+            obj.j=2;
+
+            obj.display();    
+
+        }
+
+   }
+
+
+
+Question 10Answer
+
+a.
+Compilation error
+
+
+b.
+2
+
+
+c.
+0
+
+
+d.
+Runtime error occurs. 
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the result of attempting to compile and run the following program?
+
+public class Polymorphism2 {
+
+ public static void main(String[] args) {
+
+  A ref1 = new C();
+
+  B ref2 = (B) ref1;
+
+  System.out.println(ref2.g());
+
+ }
+
+}
+
+
+
+class A {
+
+ private int f() {
+
+  return 0;
+
+ }
+
+
+
+ public int g() {
+
+  return 3;
+
+ }
+
+}
+
+
+
+class B extends A {
+
+ private int f() {
+
+  return 1;
+
+ }
+
+
+
+ public int g() {
+
+  return f();
+
+ }
+
+}
+
+
+
+class C extends B {
+
+ public int f() {
+
+  return 2;
+
+ }
+
+}
+
+
+
+Question 11Answer
+
+a.
+The program will compile without error and print 3 when run. 
+
+
+b.
+The program will compile without error and print 0 when run. 
+
+
+c.
+The program will compile without error and print 1 when run. 
+
+
+d.
+The program will compile without error and print 2 when run.
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 12Answer
+
+a.
+It is possible for two classes to be the superclass of each other. 
+
+
+b.
+A subclass must define all the methods from the superclass. 
+
+
+c.
+It is possible for a subclass to define a method with the same name and parameters as a method defined by the superclass.
+
+
+d.
+Aggregation defines a is-a relationship between a superclass and its subclasses. 
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 13Answer
+
+a.
+A class in which all the members are declared private, cannot be declared public. 
+
+
+b.
+The subclass of a non-abstract class can be declared abstract.
+
+
+c.
+A final class can be abstract. 
+
+
+d.
+All the members of the superclass are inherited by the subclass. 
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. abstract class AbstractClass {
+
+2.     void setup() { }
+
+3.     abstract int execute();
+
+4. }
+
+5. class EC extends AbstractClass {
+
+6.    int execute() {
+
+7.         System.out.println("execute of EC invoked");
+
+8.         return 0;
+
+9.     }
+
+10.}
+
+11.public class TestEC {
+
+12.    public static void main(String... args) {
+
+13.        EC ec = new EC();
+
+14.        ec.setup();
+
+15.        ec.execute();
+
+16.    }
+
+17.}
+
+What is the expected behaviour?
+
+
+
+Question 14Answer
+
+a.
+Compilation error at line 2. 
+
+
+b.
+Runtime error occurs. 
+
+
+c.
+Compilation error at line 14. 
+
+
+d.
+Prints "execute of EC invoked".
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these is supported by method overriding in Java?
+
+Question 15Answer
+
+a.
+Abstraction
+
+
+b.
+Encapsulation
+
+
+c.
+None of the mentioned
+
+
+d.
+Polymorphism
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is an abstract method?
+
+Question 16Answer
+
+a.
+An abstract method is a method which cannot be inherited. 
+
+
+b.
+An abstract method is one without a body that is declared with the reserved word abstract
+
+
+c.
+An abstract method is a method in the child class that overrides a parent method. 
+
+
+d.
+An abstract method is any method in an abstract class. 
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following statements is true?
+
+Question 17Answer
+
+a.
+An abstract class can be instantiated. 
+
+
+b.
+An abstract class is implicitly final. 
+
+
+c.
+An abstract class can not extend a concrete class. 
+
+
+d.
+An abstract class can declare non-abstract methods.
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What would be the result of attempting to compile and executing the following code?
+
+// Filename: MyClass.java
+
+public class MyClass {
+
+ public static void main(String[] args) {
+
+  C c = new C();
+
+  System.out.println(c.max(13, 29));
+
+ }
+
+}
+
+
+
+class A {
+
+ int max(int x, int y) {
+
+  if (x > y)
+
+   return x;
+
+  else
+
+   return y;
+
+ }
+
+}
+
+
+
+class B extends A {
+
+ int max(int x, int y) {
+
+  return super.max(y, x) - 10;
+
+ }
+
+}
+
+
+
+class C extends B {
+
+ int max(int x, int y) {
+
+  return super.max(x + 10, y + 10);
+
+ }
+
+}
+
+
+
+Question 18Answer
+
+a.
+The code will fail to compile because a call to a max() method is ambiguous. 
+
+
+b.
+The code will fail to compile because the max() method in B passes the arguments in the call super.max(y, x) in the wrong order. 
+
+
+c.
+code will compile without errors and will print 39 when run. 
+
+
+d.
+code will compile without errors and will print 29 when run.
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Here is an abstract method defined in the parent:
+
+public abstract int sumUp ( int[] arr );
+
+Which of the following is required in a non-abstract child?
+
+
+
+Question 19Answer
+
+a.
+public abstract int sumUp ( int[] arr ) { . . . }
+
+
+b.
+public int sumUp ( long[] arr ) { . . . }
+
+
+c.
+public int sumUp ( int[] arr ) { . . . }
+
+
+d.
+public double sumUp ( int[] arr ) { . . . }
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Here is a situation:
+
+Birthday happy;
+
+happy = new AdultBirthday( "Joe", 39);
+
+happy.greeting();
+
+Which greeting() method is run ?
+
+
+
+Question 20Answer
+
+a.
+The assignment statement where the AdultBirthday object is assigned to happy variable is an error. 
+
+
+b.
+The one defined for Birthday because that is the type of the variable happy. 
+
+
+c.
+The one closest in the source code to the happy.greeting() statement. 
+
+
+d.
+The one defined for AdultBirthday because that is the type of the object referred to by happy.
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these packages contains abstract keyword?
+
+Question 21Answer
+
+a.
+java.util
+
+
+b.
+java.io
+
+
+c.
+java.lang
+
+
+d.
+java.system
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+In the below class, is constructor overloaded or is method overloaded?
+
+
+
+public class A
+
+{
+
+    public A()
+
+    {
+
+        //-----> (1)
+
+    }
+
+ 
+
+    void A()
+
+    {
+
+        //-----> (2)
+
+    }
+
+}
+
+
+
+Question 22Answer
+
+a.
+Method
+
+
+b.
+Constructor
+
+
+c.
+Both constructor and method
+
+
+d.
+None of the mentioned
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the process of defining a method in subclass having same name & type signature as a method in its superclass?
+
+Question 23Answer
+
+a.
+None of the mentioned
+
+
+b.
+Method overriding
+
+
+c.
+Method hiding
+
+
+d.
+Method overloading
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+class MySuper {
+
+ final int calculate(int i, int j) {
+
+  return i * j;
+
+ }
+
+}
+
+
+
+public class MySub extends MySuper {
+
+ int calculate(int i, int j) {
+
+  return 2 * i * j;
+
+ }
+
+
+
+ public static void main(String[] args) {
+
+  MySuper sup = new MySub();
+
+  int k = sup.calculate(2, 5);
+
+  System.out.println(k);
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 24Answer
+
+a.
+An exception is thrown at runtime 
+
+
+b.
+10
+
+
+c.
+20
+
+
+d.
+Compilation error
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is an abstract class?
+
+Question 25Answer
+
+a.
+An abstract class is any parent class with more than one child class. 
+
+
+b.
+An abstract class is one without any child classes. 
+
+
+c.
+An abstract class is a class which cannot be instantiated.
+
+
+d.
+An abstract class is another name for "base class." 
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following classes and declarations, which statement is true?
+
+// Classes
+
+class Foo {
+
+    private int i;
+
+    private void f() { /* ... */ }
+
+    public void g() { /* ... */ }
+
+}
+
+class Bar extends Foo {
+
+    public int j;
+
+    public void g() { /* ... */ }
+
+}
+
+// Declarations:
+
+// ...
+
+    Foo a = new Foo();
+
+    Bar b = new Bar();
+
+// ...
+
+
+
+Question 26Answer
+
+a.
+The statement a.j = 5; is legal. 
+
+
+b.
+The statement b.f(); is legal. 
+
+
+c.
+The statement a.g(); is legal.
+
+
+d.
+The statement b.i = 3; is legal 
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+class A {
+
+ public void baz() {
+
+  System.out.println("A");
+
+ }
+
+}
+
+
+
+public class B extends A {
+
+ public static void main(String[] args) {
+
+  A a = new B();
+
+  a.baz();
+
+ }
+
+
+
+ public void baz() {
+
+  System.out.println("B");
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 27Answer
+
+a.
+Compilation fails. 
+
+
+b.
+B
+
+
+c.
+A
+
+
+d.
+An exception is thrown at runtime. 
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+1. class ParentClass {
+
+2.     public int doStuff(int x) {
+
+3.         return x * 2;
+
+4.     }
+
+5. }
+
+6.
+
+7. public class ChildClass extends ParentClass {
+
+8.     public static void main(String [] args ) {
+
+9.         ChildClass cc = new ChildClass();
+
+10.       long x = cc.doStuff(7);
+
+11.       System.out.println("x = " + x);
+
+12.   }
+
+13.
+
+14.   public long doStuff(int x) {
+
+15.       return x * 3;
+
+16.    }
+
+17. }
+
+What is the result?
+
+
+
+Question 28Answer
+
+a.
+Compilation fails at line 2. 
+
+
+b.
+x = 14 
+
+
+c.
+Compilation fails at line 14.
+
+
+d.
+x = 21 
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these keywords can be used to prevent Method overriding?
+
+Question 29Answer
+
+a.
+final
+
+
+b.
+constant
+
+
+c.
+protected
+
+
+d.
+static
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+
+
+    class A 
+
+    {
+
+        int i;
+
+        public void display() 
+
+        {
+
+            System.out.println(i);
+
+        }    
+
+    }    
+
+    class B extends A 
+
+   {
+
+        int j;
+
+        public void display() 
+
+        {
+
+            System.out.println(j);
+
+        } 
+
+    }    
+
+    class Dynamic_dispatch 
+
+   {
+
+        public static void main(String args[])
+
+        {
+
+            B obj2 = new B();
+
+            obj2.i = 1;
+
+            obj2.j = 2;
+
+            A r;
+
+            r = obj2;
+
+            r.display();     
+
+        }
+
+   }
+
+
+
+Question 30Answer
+
+a.
+3
+
+
+b.
+4
+
+
+c.
+2
+
+
+d.
+1
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 31Answer
+
+a.
+Private methods of a superclass cannot be overridden in subclasses.
+
+
+b.
+Methods with default access in a superclass cannot be overridden in subclasses. 
+
+
+c.
+Protected methods of a superclass cannot be overridden in subclasses. 
+
+
+d.
+Public methods of a superclass cannot be overridden in subclasses. 
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1 abstract class AbstractIt
+
+2 {
+
+3     abstract float getFloat();
+
+4 }
+
+5 public class Test1 extends AbstractIt
+
+6 {
+
+7      private float f1 = 1.0f;
+
+8      private float getFloat(){ return f1;}
+
+9
+
+10    public static void main(String[] args)
+
+11    {
+
+12    }
+
+13 }
+
+
+
+Question 32Answer
+
+a.
+Runtime error at line 8 
+
+
+b.
+Compilation error at line no 5 
+
+
+c.
+Compilation succeeds 
+
+
+d.
+Compilation error at line no 8
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 33Answer
+
+a.
+The parameter list of an overriding method must be a subset of the parameter list of the method that it is overriding. 
+
+
+b.
+Private methods of a superclass cannot be overridden in subclasses.
+
+
+c.
+An overriding method can declare that it throws more exceptions than the method it is overriding. 
+
+
+d.
+A subclass can override any method present in a superclass. 
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. abstract class A {
+
+2.     abstract short m1() ;
+
+3.     short m2() { return (short) 420; }
+
+4. }
+
+5.
+
+6. abstract class B extends A {
+
+7.     // missing code?
+
+8.     short m1() { return (short) 42; }
+
+9. }
+
+Which of the following statements is true?
+
+
+
+Question 34Answer
+
+a.
+If class A was not abstract and method m1() on line 2 was implemented, the code would not compile. 
+
+
+b.
+It is legal, but not required, for class B to either make an abstract declaration of method m2() or implement method m2() for the code to compile.
+
+
+c.
+As long as line 8 exists, class A must declare method m1() in some way. 
+
+
+d.
+Class B must either make an abstract declaration of method m2() or implement method m2() to allow the code to compile. 
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+If a class inheriting an abstract class does not define all of its function then it will be known as?
+
+Question 35Answer
+
+a.
+Abstract
+
+
+b.
+A simple class
+
+
+c.
+None of the mentioned
+
+
+d.
+Static class
