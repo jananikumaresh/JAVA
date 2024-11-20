@@ -1,0 +1,1149 @@
+Question 1
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will the output for the following code snippet?
+
+HashMap map1 = new HashMap();
+
+HashMap map2 = new HashMap();
+
+map1.put(1, "E-BOX");
+
+map1.put(2, "Learning and Assessment");
+
+map1.put(3, "Platform");
+
+map2.putAll(map1);
+
+System.out.println(map2);
+
+
+
+Question 1Answer
+
+a.
+{ } 
+
+
+b.
+CompileTimeError
+
+
+c.
+1,2,3
+
+
+d.
+{1=E-BOX, 2=Learning and Assessment, 3=Platform}
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following are false about Collections and Collection?
+
+Question 2Answer
+
+a.
+Collections is a special type of collection which holds Set of collections
+
+
+b.
+Both Collections and Collection entity belongs to java.util package
+
+
+c.
+Collection is an interface to Set and List
+
+
+d.
+Collections is a Utility class
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What happens if we put a key object in a HashMap which exists?
+
+Question 3Answer
+
+a.
+It throws an exception as the key already exists in the map
+
+
+b.
+The new object is discarded
+
+
+c.
+The old object is removed from the map
+
+
+d.
+The new object replaces the older object
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following maintains no ordering and contains unique elements?
+
+Question 4Answer
+
+a.
+HashMap
+
+
+b.
+TreeMap
+
+
+c.
+All of the mentioned
+
+
+d.
+LinkedHashMap
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which code will sort the keys of props hashmap?
+
+HashMap props=new HashMap();
+
+props.put("Key45","value45");
+
+props.put("Key24","value24");
+
+props.put("Key33","value33");
+
+Set s=props.keySet();
+
+//insert code here
+
+
+
+Question 5Answer
+
+a.
+Array.sort(s)
+
+
+b.
+s=new SortedSet(s);
+
+
+c.
+s=new TreeSet(s)
+
+
+d.
+Collections.sort(s);
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which interface does java.util.Hashtable implement?
+
+Question 6Answer
+
+a.
+java.util.List
+
+
+b.
+java.util.Map
+
+
+c.
+java.util.HashTable
+
+
+d.
+java.util.Collection
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which interface does java.util.Hashtable implement?
+
+Question 7Answer
+
+a.
+Java.util.List
+
+
+b.
+Java.util.Map
+
+
+c.
+Java.util.HashTable
+
+
+d.
+Java.util.Collection
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these methods can be used to obtain set of all keys in a map?
+
+Question 8Answer
+
+a.
+getKeys()
+
+
+b.
+keySet()
+
+
+c.
+getAll()
+
+
+d.
+keyall()
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Maps 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             HashMap obj = new HashMap();
+
+7.             obj.put("A", new Integer(1));
+
+8.             obj.put("B", new Integer(2));
+
+9.             obj.put("C", new Integer(3));
+
+10.             System.out.println(obj.keySet());
+
+11.         }
+
+12.     }
+
+
+
+Question 9Answer
+
+a.
+[A, B, C]
+
+
+b.
+[1, 2, 3]
+
+
+c.
+{A, B, C}
+
+
+d.
+{1, 2, 3}
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which collection class allows you to associate its elements with key values, and allows you to retrieve objects in FIFO (first-in, first-out) sequence?
+
+Question 10Answer
+
+a.
+java.util.TreeMap
+
+
+b.
+java.util.HashMap
+
+
+c.
+java.util.ArrayList
+
+
+d.
+java.util.LinkedHashMap
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+TreeSet map = new TreeSet();
+
+map.add("one");
+
+map.add("two");
+
+map.add("three");
+
+map.add("four");
+
+map.add("one");
+
+Iterator it = map.iterator();
+
+while (it.hasNext() ) {
+
+System.out.print( it.next() + " " );
+
+}
+
+What is the result?
+
+
+
+Question 11Answer
+
+a.
+four three two one
+
+
+b.
+one two three four
+
+
+c.
+one two three four one
+
+
+d.
+An exception is thrown at runtime.
+
+
+e.
+four one three two
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+public static void before() {
+
+Set set = new TreeSet();
+
+set.add("2");
+
+set.add(3);
+
+set.add("1");
+
+Iterator it = set.iterator();
+
+while (it.hasNext())
+
+System.out.print(it.next() + " ");
+
+}
+
+Which of the following statements are true?
+
+
+
+Question 12Answer
+
+a.
+The before() method will not compile
+
+
+b.
+The before() method will print 1 2 3
+
+
+c.
+The before() method will print 1 2
+
+
+d.
+The before() method will print three numbers, but the order cannot be determined
+
+
+e.
+The before() method will throw an exception at runtime
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Maps 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             HashMap obj = new HashMap();
+
+7.             obj.put("A", new Integer(1));
+
+8.             obj.put("B", new Integer(2));
+
+9.             obj.put("C", new Integer(3));
+
+10.             System.out.println(obj);
+
+11.         }
+
+12.     }
+
+
+
+Question 13Answer
+
+a.
+{A=1, B=2, C=3}
+
+
+b.
+{A-1, B-1, C-1}
+
+
+c.
+{A, B, C}
+
+
+d.
+{A 1, B 1, C 1}
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these classes provide implementation of map interface?
+
+Question 14Answer
+
+a.
+DynamicList
+
+
+b.
+LinkedList
+
+
+c.
+ArrayList
+
+
+d.
+HashMap
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method is used add an element and corresponding key to a map?
+
+Question 15Answer
+
+a.
+redo()
+
+
+b.
+set()
+
+
+c.
+add()
+
+
+d.
+put()
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the result of attempting to compile and run the following code?
+
+import java.util.TreeSet;
+
+public class Test {
+
+
+
+public static void main(String[] args){
+
+Integer a = new Integer(4);
+
+Integer b = new Integer(8);
+
+Integer c = new Integer(4);
+
+TreeSet ts = new TreeSet();
+
+ts.add(a);
+
+ts.add(b);
+
+ts.add(c);
+
+System.out.println(ts);
+
+}
+
+}
+
+
+
+Question 16Answer
+
+a.
+Will print [8, 4]
+
+
+b.
+Will print [4, 8]
+
+
+c.
+Will print [8, 4, 4]
+
+
+d.
+Will print [4, 8, 4]
+
+
+e.
+Will print [4, 4, 8]
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method Map class is used to obtain an element in the map having specified key?
+
+Question 17Answer
+
+a.
+set()
+
+
+b.
+get()
+
+
+c.
+look()
+
+
+d.
+search()
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Maps 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             TreeMap obj = new TreeMap();
+
+7.             obj.put("A", new Integer(1));
+
+8.             obj.put("B", new Integer(2));
+
+9.             obj.put("C", new Integer(3));
+
+10.             System.out.println(obj.entrySet());
+
+11.         }
+
+12.     }
+
+
+
+Question 18Answer
+
+a.
+{A=1, B=2, C=3}
+
+
+b.
+[1, 2, 3]
+
+
+c.
+[A, B, C]
+
+
+d.
+[A=1, B=2, C=3]
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the below does not implement Map interface?
+
+Question 19Answer
+
+a.
+HashMap
+
+
+b.
+Hashtable
+
+
+c.
+EnumMap
+
+
+d.
+Vector
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following method is used to remove all key/value pair map?
+
+Question 20Answer
+
+a.
+None of the mentioned
+
+
+b.
+removeAll()
+
+
+c.
+remove()
+
+
+d.
+deleteAll()
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Maps 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             HashMap obj = new HashMap();
+
+7.             obj.put("A", new Integer(1));
+
+8.             obj.put("B", new Integer(2));
+
+9.             obj.put("C", new Integer(3));
+
+10.             System.out.println(obj.get("B"));
+
+11.         }
+
+12.     }
+
+
+
+Question 21Answer
+
+a.
+3
+
+
+b.
+1
+
+
+c.
+null
+
+
+d.
+2
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these object stores association between keys and values?
+
+Question 22Answer
+
+a.
+String
+
+
+b.
+Array
+
+
+c.
+Map
+
+
+d.
+Hash table
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Select one or more true statements: 
+
+A. Set does not store duplicate values 
+
+B. All Set implementations are sorted. 
+
+C . HashMap and Hashtable both store key value pairs, Hashtable we would use in case of synchronization requirements. 
+
+D. List implemetations dynamically grow in size, allow duplicates and are not sorted
+
+
+
+Question 23Answer
+
+a.
+only C
+
+
+b.
+A, C, D
+
+
+c.
+only B
+
+
+d.
+Both A and D
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which interface provides the capability to store objects using a key-value pair?
+
+Question 24Answer
+
+a.
+Java.util.List
+
+
+b.
+Java.util.Set
+
+
+c.
+Java.util.Map
+
+
+d.
+Java.util.Collection
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Map implements collection interface?
+
+Question 25Answer
+
+a.
+True
+
+
+b.
+False
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method Map class is used to obtain an element in the map having specified key?
+
+Question 26Answer
+
+a.
+get()
+
+
+b.
+set()
+
+
+c.
+search()
+
+
+d.
+look()
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following?
+
+import java.util.Iterator;
+
+import java.util.TreeSet;
+
+
+
+public class Test {
+
+ public static void main(String[] args) {
+
+  TreeSet map = new TreeSet();
+
+  map.add("one");
+
+  map.add("two");
+
+  map.add("three");
+
+  map.add("four");
+
+  map.add("one");
+
+  Iterator it = map.iterator();
+
+  while(it.hasNext()) {
+
+   System.out.print(it.next() + " ");
+
+  }
+
+ }
+
+}
+
+
+
+Question 27Answer
+
+a.
+four one three two
+
+
+b.
+four three two one
+
+
+c.
+one two three four one
+
+
+d.
+one two three four
+
+
+e.
+An exception is thrown at runtime
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these methods can be used to obtain set of all keys in a map?
+
+Question 28Answer
+
+a.
+getAll()
+
+
+b.
+getKeys()
+
+
+c.
+keySet()
+
+
+d.
+keyall()
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+While finding the correct location for saving key value pair, how many times the key is hashed?
+
+Question 29Answer
+
+a.
+1
+
+
+b.
+3
+
+
+c.
+2
+
+
+d.
+unlimited till bucket is found
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+import java.util.*;
+
+class Maps {
+
+    public static void main(String args[]) {
+
+        HashMap obj = new HashMap();
+
+        obj.put("A", new Integer(1));
+
+        obj.put("B", new Integer(2));
+
+        obj.put("C", new Integer(3));
+
+        System.out.println(obj);
+
+    }
+
+}
+
+
+
+Question 30Answer
+
+a.
+{A-1, B-1, C-1}
+
+
+b.
+{A=1, B=2, C=3}
+
+
+c.
+{A 1, B 1, C 1}
+
+
+d.
+{A, B, C}
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java code snippet?
+
+
+
+1. public class Demo
+
+2. {
+
+3.   public static void main(String[] args)
+
+4.   {
+
+5.   Map<Integer, Object> sampleMap = new TreeMap<Integer, Object>();
+
+6.   sampleMap.put(1, null); 
+
+7.   sampleMap.put(5, null); 
+
+8.   sampleMap.put(3, null); 
+
+9.   sampleMap.put(2, null); 
+
+10.   sampleMap.put(4, null); 
+
+11.  
+
+12.        System.out.println(sampleMap);
+
+13.    }
+
+14. }
+
+
+
+Question 31Answer
+
+a.
+Exception is thrown
+
+
+b.
+{1=null, 5=null, 3=null, 2=null, 4=null}
+
+
+c.
+{1=null, 2=null, 3=null, 4=null, 5=null}
+
+
+d.
+{5=null}
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method is used to remove all keys/values pair from the invoking map?
+
+Question 32Answer
+
+a.
+delete()
+
+
+b.
+removeAll()
+
+
+c.
+remove()
+
+
+d.
+clear()
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Suppose that you would like to create an instance of a new Map that has an iteration order that is the same as the iteration order of an existing instance of a Map. Which concrete implementation of the Map interface should be used for the new instance?
+
+Question 33Answer
+
+a.
+TreeMap
+
+
+b.
+HashMap
+
+
+c.
+LinkedHashMap
+
+
+d.
+The answer depends on the implementation of the existing instance.
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Is hashmap an ordered collection.
+
+Question 34Answer
+
+a.
+False
+
+
+b.
+True
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method is used add an element and corresponding key to a map?
+
+Question 35Answer
+
+a.
+redo()
+
+
+b.
+add()
+
+
+c.
+put()
+
+
+d.
+set()
