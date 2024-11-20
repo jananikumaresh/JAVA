@@ -1,0 +1,135 @@
+1
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        // Create a scanner object to take input
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the number of elements to be inserted into the set
+        int n = scanner.nextInt();
+
+        // Create a HashSet to store the elements
+        HashSet<Integer> set = new HashSet<>();
+
+        // Insert the elements into the set
+        for (int i = 0; i < n; i++) {
+            int element = scanner.nextInt();
+            set.add(element);
+        }
+
+        // Read the element to be searched in the set
+        int searchElement = scanner.nextInt();
+
+        // Check if the element is in the set and print the result
+        if (set.contains(searchElement)) {
+            System.out.println(searchElement + " was found in the set.");
+        } else {
+            System.out.println(searchElement + " was not found in the set.");
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+}
+2
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class SetComparison {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read size and elements for the first set
+        int n1 = scanner.nextInt();
+        Set<String> set1 = new HashSet<>();
+        scanner.nextLine();  // Consume the newline after the integer input
+        for (int i = 0; i < n1; i++) {
+            set1.add(scanner.nextLine());
+        }
+
+        // Read size and elements for the second set
+        int n2 = scanner.nextInt();
+        Set<String> set2 = new HashSet<>();
+        scanner.nextLine();  // Consume the newline after the integer input
+        for (int i = 0; i < n2; i++) {
+            set2.add(scanner.nextLine());
+        }
+
+        // Retain only common elements
+        set1.retainAll(set2);
+
+        // Output the common elements
+        for (String element : set1) {
+            System.out.println(element);
+        }
+
+        scanner.close();
+    }
+}
+3
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.Scanner;
+
+class prog {
+    public static void main(String[] args) {
+        // Creating a HashMap with default initial capacity and load factor
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+
+        String name;
+        int num;
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); // Read the number of key-value pairs to be entered
+
+        for (int i = 0; i < n; i++) {
+            name = sc.next(); // Read the name (key)
+            num = sc.nextInt(); // Read the number (value)
+            map.put(name, num); // Add the key-value pair to the HashMap
+        }
+
+        // Printing key-value pairs from the first map
+        for (Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
+        System.out.println("----------"); // Separator line
+
+        // Creating another HashMap
+        HashMap<String, Integer> anotherMap = new HashMap<String, Integer>();
+
+        // Inserting key-value pairs to anotherMap using put() method
+        anotherMap.put("SIX", 6);
+        anotherMap.put("SEVEN", 7);
+
+        // Inserting key-value pairs of map to anotherMap using putAll() method
+        anotherMap.putAll(map); // Add all entries from 'map' to 'anotherMap'
+
+        // Printing key-value pairs of anotherMap
+        for (Entry<String, Integer> entry : anotherMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
+        // Adds key-value pair 'FIVE'-5' only if it is not present in map
+        map.putIfAbsent("FIVE", 5);
+
+        // Retrieving a value associated with key 'TWO'
+        int value = map.get("TWO");
+        System.out.println(value);
+
+        // Checking whether key 'ONE' exists in map
+        System.out.println(map.containsKey("ONE"));
+
+        // Checking whether value '3' exists in map
+        System.out.println(map.containsValue(3));
+
+        // Retrieving the number of key-value pairs present in map
+        System.out.println(map.size());
+
+        sc.close(); // Close the scanner to prevent resource leaks
+    }
+}
