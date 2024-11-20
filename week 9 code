@@ -1,0 +1,84 @@
+1
+class prog {
+    
+    public static void checkNumber(int num) throws Exception {
+        if (num % 2 == 0) {
+            
+            System.out.println(num + " is even.");
+        } else {
+            
+            throw new Exception("Error: " + num + " is odd.");
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            
+            checkNumber(82); 
+            checkNumber(37); 
+        } catch (Exception e) {
+            
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
+2
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class ArraySum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        try {
+            
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            int sum = 0;
+            
+            
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.nextInt();
+                sum += arr[i];
+            }
+            
+            
+            System.out.println(sum);
+            
+        } catch (InputMismatchException e) {
+            
+            System.out.println("You entered bad data.");
+        }
+    }
+}
+
+3
+import java.util.Scanner;
+class prog {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try{
+        
+        int size = scanner.nextInt();
+
+        
+        int[] array = new int[size];
+
+        array[0]=1;
+        for (int i = 0; i < size; i++) {
+            int d=1;
+            array[i+1] = scanner.nextInt();
+            d/=array[i];
+        }
+            
+        } catch (ArithmeticException e) {
+            System.out.println("java.lang.ArithmeticException: "+e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("java.lang.ArrayIndexOutOfBoundsException: " + e.getMessage());
+        } finally {
+            System.out.println("I am always executed");
+        }
+    }
+}
