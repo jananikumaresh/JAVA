@@ -1,0 +1,1540 @@
+Given the following,
+
+1. int i = 0;
+
+2. label:
+
+3.     if (i < 2) {
+
+4.         System.out.print(" i is " + i);
+
+5.         i++;
+
+6.         continue label;
+
+7.     }
+
+What is the result?
+
+Question 1Answer
+
+a.
+Produces no output 
+
+
+b.
+i is 0 i is 1 
+
+
+c.
+Compilation fails
+
+
+d.
+i is 0 
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true about the following code fragment?
+
+1. int j = 2;
+
+2. switch (j) {
+
+3.     case 2:
+
+4.         System.out.println("value is two");
+
+5.     case 2 + 1:
+
+6.         System.out.println("value is three");
+
+7.         break;
+
+8.     default:
+
+9.         System.out.println("value is " + j);
+
+10.       break;
+
+11. }
+
+Question 2Answer
+
+a.
+The output would be
+
+value is two 
+
+
+b.
+The code is illegal because of the expression at line 5
+
+
+c.
+The output would be
+
+value is two
+
+value is three
+
+value is 2
+
+
+d.
+The output would be
+
+value is two
+
+value is three
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+public class Test {
+
+ public static void main(String[[] args) {
+
+  int i = 1;
+
+  do
+
+   while (i < 1)
+
+    System.out.print(" i is " + i);
+
+  while (i > 1);
+
+ }
+
+}
+
+What is the result?
+
+Question 3Answer
+
+a.
+No output is produced.
+
+
+b.
+i is 1 i is 1 ... in an infinite loop
+
+
+c.
+i is 1 i is 1 
+
+
+d.
+i is 1 
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Examine the following code fragment:
+
+      int j = 1;
+
+      while (  j < 10  )
+
+      {      
+
+          System.out.println( j + " " ); 
+
+          j = j + j%3;
+
+      }
+
+
+
+What is output to the monitor?
+
+
+
+Question 4Answer
+
+a.
+1 2 5 8
+
+
+b.
+1 2 4 5 7 8
+
+
+c.
+1 4 7 10
+
+
+d.
+
+
+
+e.
+1 4 7
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Choose the correct expressions which satisfy the given table for X
+
+X Result
+
+-68 true
+
+-31 false
+
+-70 true
+
+-60 false
+
+Question 5Answer
+
+a.
+x > 0
+
+
+b.
+x < -60
+
+
+c.
+x > -50
+
+
+d.
+x != -31
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+public class If1 
+
+{
+
+    static boolean b;
+
+    public static void main(String [[] args) 
+
+    {
+
+        short hand = 42;
+
+        if ( hand < 50 && !b ) /* Line 7 */
+
+            hand++;
+
+        if ( hand > 50 );     /* Line 9 */
+
+        else if ( hand > 40 ) 
+
+        {
+
+            hand += 7;
+
+            hand++;    
+
+        }
+
+        else
+
+            --hand;
+
+        System.out.println(hand);
+
+    }
+
+}
+
+Choose the correct answer(s) from the following:
+
+Question 6Answer
+
+a.
+51
+
+
+b.
+41
+
+
+c.
+50
+
+
+d.
+42
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is a legal loop definition?
+
+Question 7Answer
+
+a.
+do { /* whatever */ } while (int a == 0); 
+
+
+b.
+for (int a=0; a<100; a++) { /* whatever */ }
+
+
+c.
+do { /* whatever */ } while (int a = 0); 
+
+
+d.
+while (int a == 0) { /* whatever */ } 
+
+
+e.
+
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+public class TestSwitch {
+
+ public static void main(String args[[]) {
+
+  byte b = -1;
+
+  switch (b) {
+
+  case -1:
+
+   System.out.print("-1");
+
+   break;
+
+  case 127:
+
+   System.out.print("127");
+
+   break;
+
+  case 128:
+
+   System.out.print("128");
+
+   break;
+
+  default:
+
+   System.out.print("Default ");
+
+  }
+
+ }
+
+}
+
+What is the result of attempting to compile and run the program?
+
+
+
+Question 8Answer
+
+a.
+Compile-time error 
+
+
+b.
+Prints: 128 
+
+
+c.
+Prints: -1
+
+
+d.
+
+
+
+e.
+Prints: Default 
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Choose the correct expressions which satisfy the given table for both X and Y
+
+X Y Result
+
+36 -89 true
+
+67 14 true
+
+91 37 false
+
+61 15 true
+
+34 25 false
+
+26 48 false
+
+Question 9Answer
+
+a.
+(x > 40 ) || (y < 20)
+
+
+b.
+(x >= 50 ) && (y > 70)
+
+
+c.
+(x < 70 ) && (y < 20)
+
+
+d.
+(x < 70 ) || (y < 20)
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the program?
+
+
+
+int i = l, j = -1; 
+
+switch (i) 
+
+{
+
+    case 0, 1: j = 1; /* Line 4 */
+
+    case 2: j = 2; 
+
+    default: j = 0; 
+
+} 
+
+System.out.println("j = " + j); 
+
+Question 10Answer
+
+a.
+
+
+
+b.
+j = -1
+
+
+c.
+j = 1
+
+
+d.
+j = 0
+
+
+e.
+Compilation fails.
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class TestLoop {
+
+ public static void main(String... args) {
+
+  int index = 2;
+
+  while (--index > 0)
+
+   System.out.println(index);
+
+ }
+
+}
+
+What is printed to standard output?
+
+
+
+Question 11Answer
+
+a.
+1
+
+
+b.
+Nothing is printed 
+
+
+c.
+2
+
+
+d.
+
+
+
+e.
+0
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+    switch( i)
+
+    {
+
+        default :
+
+            System.out.println("Hello");
+
+    }
+
+What is the acceptable type for the variable i?
+
+Question 12Answer
+
+a.
+double 
+
+
+b.
+float 
+
+
+c.
+byte
+
+
+d.
+Object 
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the program?
+
+
+
+int I = 0;
+
+label:
+
+    if (I < 2) {
+
+    System.out.print("I is " + I);
+
+    I++;
+
+    continue label;
+
+}
+
+Question 13Answer
+
+a.
+Compilation fails.
+
+
+b.
+None of the mentioned
+
+
+c.
+I is 0 I is 1
+
+
+d.
+
+
+
+e.
+I is 0
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will the below mentioned program print?
+
+
+
+public class Sample {
+
+ public static void main(String[[] args) {
+
+  boolean b = false;
+
+  if (b = true)
+
+   System.out.println("True");
+
+  else
+
+   System.out.println("False");
+
+ }
+
+}
+
+
+
+Question 14Answer
+
+a.
+False
+
+
+b.
+
+
+
+c.
+True
+
+
+d.
+
+
+
+e.
+
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+public class TestForSwitch {
+
+ public static void main(String[[] args) {
+
+  for (int i = 0; i < 3; i++) {
+
+   switch (i) {
+
+   default:
+
+    System.out.print("D");
+
+   case 0:
+
+    System.out.print("0");
+
+   case 1:
+
+    System.out.print("1");
+
+   }
+
+  }
+
+ }
+
+}
+
+What is the result of attempting to compile and run the program?
+
+
+
+Question 15Answer
+
+a.
+Prints: 01D01 
+
+
+b.
+
+
+
+c.
+Prints 011D01
+
+
+d.
+Prints: 01D 
+
+
+e.
+Prints: DDD 
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the most common type of bug in software?
+
+Question 16Answer
+
+a.
+The "wrong way" problem, where a two way decision is written incorrectly.
+
+
+b.
+The "unititialized variable" problem, where a variable is used in an expression before its contents have been initialized.
+
+
+c.
+The "off by one" problem, where a counting loop executes its body one time too many or one time too few.
+
+
+d.
+The "wrong operator" problem, where an arithmetic expression does not mean what the programmer thought it did.
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is output of the following program?
+
+class A {
+
+ public static void main(String[[] args) {
+
+  float f = new Float(2.5);
+
+  float f1 = 2.5f;
+
+  if (f == f1)
+
+   System.out.println("cat");
+
+  else
+
+   System.out.println("mouse");
+
+ }
+
+}
+
+
+
+Question 17Answer
+
+a.
+cat
+
+
+b.
+Compilation error
+
+
+c.
+
+
+
+d.
+mouse
+
+
+e.
+Runtime error
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What makes a loop a counting loop?
+
+Question 18Answer
+
+a.
+A loop control variable is tested in the while statement, and is changed each time the loop body executes
+
+
+b.
+
+
+
+c.
+A counter is counted upwards by one until it hits a particular limit.
+
+
+d.
+No loop control variables are used.
+
+
+e.
+A counter is counted downwards by one until it hits zero.
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+1. public class Test1
+
+2. {
+
+3.      public static void main(String[[] args)
+
+4.      {
+
+5.           int i=0;
+
+6.           while(i)
+
+7.           {
+
+8.                if(i==4) break;
+
+9.                i++;
+
+10.         }
+
+11.     }
+
+12. }
+
+What will be the value of i at line 11?
+
+Question 19Answer
+
+a.
+0
+
+
+b.
+5
+
+
+c.
+4
+
+
+d.
+The code will not compile
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Here is part of a graphics program that simulates a color fading in the sun. The amount of red starts at the maximum of 1.0 and is faded by drecreasing it by 1% each time the loop executes, until it is close to zero.
+
+      float redLevel = 1.0;
+
+      while (  __________________  )
+
+      {      
+
+         redLevel = redLevel*0.99 ;
+
+ 
+
+         // the new redLevel is used here in some graphics methods         
+
+      }
+
+Pick a condition for the while statement.
+
+
+
+Question 20Answer
+
+a.
+redLevel > 0.001
+
+
+b.
+redLevel*redLevel < 1.0
+
+
+c.
+redLevel == 0.0
+
+
+d.
+
+
+
+e.
+Math.abs( redLevel ) < 0.0
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Choose the correct expressions which satisfy the given table for both X and Y
+
+
+
+X Y Result
+
+28 -44 true
+
+58 17 false
+
+47 59 true
+
+30 72 true
+
+63 -12 false
+
+37 33 false
+
+
+
+Question 21Answer
+
+a.
+
+
+
+b.
+(x < 25 ) || (y > 35)
+
+
+c.
+(x < 75 ) || (y > -100)
+
+
+d.
+(x == 0 ) && (y > 35)
+
+
+e.
+(x < 35 ) || (y > 35)
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class TestLoop {
+
+ public static void main(String... args) {
+
+  int index = 2;
+
+  while (index-- > 0)
+
+   System.out.println(index);
+
+ }
+
+}
+
+What is printed to standard output?
+
+
+
+Question 22Answer
+
+a.
+Nothing is printed 
+
+
+b.
+1 
+
+2
+
+
+
+
+c.
+1
+
+0 
+
+
+
+
+d.
+
+
+
+e.
+1
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Another word for "looping" is:
+
+Question 23Answer
+
+a.
+iteration
+
+
+b.
+tintinabulation
+
+
+c.
+reiteration
+
+
+d.
+recapitulation
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of the below program?
+
+public class Output {
+
+ public static void main(String[[] args) {
+
+  int x, y = 1;
+
+  x = 10;
+
+  if (x != 10 && x / 0 == 0)
+
+   System.out.printlnYes;
+
+  else
+
+   System.out.println(++y);
+
+ }
+
+}
+
+Question 24Answer
+
+a.
+Runtime error owing to division by zero in if condition
+
+
+b.
+Compilation error
+
+
+c.
+2
+
+
+d.
+1
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Examine the following code:
+
+    int count = 7;                                  
+
+    while ( count >= 4 )  
+
+    {
+
+      System.out.print( count + " " );
+
+      count = count - 1; 
+
+    }
+
+    System.out.println(  );
+
+What does this code print on the monitor?
+
+Question 25Answer
+
+a.
+7 6 5 4
+
+
+b.
+7 6 5 4 3
+
+
+c.
+6 5 4 3
+
+
+d.
+1 2 3 4 5 6 7
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Choose the correct expressions which satisfy the given table for X
+
+X Result
+
+-15 true
+
+31 false
+
+-26 false
+
+-69 false
+
+Question 26Answer
+
+a.
+x > 15
+
+
+b.
+x != -69
+
+
+c.
+x < -20
+
+
+d.
+x == -15
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+ 
+
+What will be the output of the program?
+
+int x = 3; 
+
+int y = 1; 
+
+if (x == y) /* Line 3 */
+
+{
+
+    System.out.println("x =" + x); 
+
+}
+
+Question 27Answer
+
+a.
+The code runs with no output.
+
+
+b.
+x = 1
+
+
+c.
+Compilation fails.
+
+
+d.
+x = 3
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is most likely to use a counting loop?
+
+Question 28Answer
+
+a.
+Asking the user at the end of a game if the user wants to play again.
+
+
+b.
+Checking that each price in a list of items offered for sale is less than $125.
+
+
+c.
+Checking if a particular integer is even or odd.
+
+
+d.
+Trying various letter substitution combinations until a message in a secret code can be read.
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which option completes the code to print the message as long as number is greater than 20?
+
+int number = 100;
+
+MISSING CODE {
+
+    System.out.println("The number = " + number);
+
+    number --;
+
+}
+
+
+
+Question 29Answer
+
+a.
+if (number >20) 
+
+
+b.
+
+
+
+c.
+for (number > 20) 
+
+
+d.
+do while (number > 20) 
+
+
+e.
+while (number > 20)
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class DoWhileTest {
+
+ public static void main(String[[] args) {
+
+  int i = 2, j = 5;
+
+  do {
+
+   if (i++ > --j)
+
+    continue;
+
+  } while (i < 3);
+
+  System.out.printf("i=%d, j=%d", i, j);
+
+ }
+
+}
+
+After execution, what are the values of i and j?
+
+Question 30Answer
+
+a.
+i=2, j=4 
+
+
+b.
+i=2, j=5 
+
+
+c.
+i=4, j=4 
+
+
+d.
+i=3, j=4
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class DoTest {
+
+ public static void main(String[[] args) {
+
+  boolean flag;
+
+  int index = 3;
+
+  do {
+
+   flag = false;
+
+   System.out.print(index);
+
+   index--;
+
+   flag = (index > 0);
+
+   continue;
+
+  } while ((flag) ? true : false);
+
+ }
+
+}
+
+What will be the output of above code?
+
+Question 31Answer
+
+a.
+3210
+
+
+b.
+Compilation error 
+
+
+c.
+321
+
+
+d.
+Will go into an infinite loop 
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. int j = 7;
+
+2. label:
+
+3.     if (j > 5) {
+
+4.         System.out.print(" j is " + j);
+
+5.         j--;
+
+6.         continue label;
+
+7.     }
+
+What is the result?
+
+
+
+Question 32Answer
+
+a.
+j is 7 
+
+
+b.
+
+
+
+c.
+Produces no output 
+
+
+d.
+j is 7 j is 6 
+
+
+e.
+Compilation fails
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class TestDoWhile {
+
+ public static void main(String... args) {
+
+  int count = 20;
+
+  do {
+
+   System.out.println(count);
+
+  } while (count++ < 21);
+
+ }
+
+}
+
+What is the output?
+
+Question 33Answer
+
+a.
+20 
+
+21
+
+
+b.
+21
+
+
+c.
+20
+
+
+d.
+Nothing is printed 
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+public void foo( boolean a, boolean b)
+
+{ 
+
+    if( a ) 
+
+    {
+
+        System.out.println("A"); /* Line 5 */
+
+    } 
+
+    else if(a && b) /* Line 7 */
+
+    { 
+
+        System.out.println( "A && B"); 
+
+    } 
+
+    else /* Line 11 */
+
+    { 
+
+        if ( !b ) 
+
+        {
+
+            System.out.println( "notB") ;
+
+        } 
+
+        else 
+
+        {
+
+            System.out.println( "ELSE" ) ; 
+
+        } 
+
+    } 
+
+}
+
+Choose the correct answer(s) from the following:
+
+Question 34Answer
+
+a.
+If a is false and b is true then the output is "ELSE"
+
+
+b.
+If a is true and b is true then the output is "A && B"
+
+
+c.
+If a is false and b is false then the output is "ELSE"
+
+
+d.
+If a is true and b is false then the output is "notB"
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+class selection_statements 
+
+    {
+
+        public static void main(String args[[])
+
+        {
+
+            int var1 = 5; 
+
+            int var2 = 6;
+
+            if ((var2 = 1) == var1)
+
+                System.out.print(var2);
+
+            else 
+
+                System.out.print(++var2);
+
+        } 
+
+    }
+
+Question 35Answer
+
+a.
+4
+
+
+b.
+3
+
+
+c.
+1
+
+
+d.
+2
