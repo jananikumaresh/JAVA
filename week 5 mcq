@@ -1,0 +1,1316 @@
+A class Animal has a subclass Mammal. Which of the following is true: 
+
+Question 1Answer
+
+a.
+Because of single inheritance, Mammal can have no subclasses.
+
+
+b.
+Because of single inheritance, Animal can have only one subclass.
+
+
+c.
+Because of single inheritance, Mammal can have no other parent than Animal.
+
+
+d.
+Because of single inheritance, Mammal can have no siblings.
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 2Answer
+
+a.
+If super() is the first statement in the body of a constructor, then this() can be declared as the second statement. 
+
+
+b.
+If neither super() nor this() is declared as the first statement in the body of a constructor, then this() will implicitly be inserted as the first statement. 
+
+
+c.
+A super() or this() call must always be provided explicitly as the first statement in the body of a constructor. 
+
+
+d.
+If both a subclass and its superclass do not have any declared constructors, the implicit default constructor of the subclass will call super() when run.
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. class B extends A {
+
+2.     int getID() {
+
+3.         return id;
+
+4.     }
+
+5. }
+
+6. class C {
+
+7.     public int name;
+
+8. }
+
+9. class A {
+
+10.    C c = new C();
+
+11.    public int id;
+
+12. }
+
+Which one is correct about instances of the classes listed above?
+
+
+
+Question 3Answer
+
+a.
+B has-a A 
+
+
+b.
+A is-a B 
+
+
+c.
+B has-a C
+
+
+d.
+C is-a A 
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+class B {
+
+ int m = 7;
+
+}
+
+
+
+class D extends B {
+
+ int m = 9;
+
+}
+
+
+
+public class TestBaseDerived {
+
+ public static void main(String[] args) {
+
+  B b = new B();
+
+  D d = new D();
+
+  B bd = new D();
+
+  System.out.printf("%d %d %d", b.m, d.m, bd.m);
+
+ }
+
+}
+
+What will be the output on executing the above code?
+
+
+
+Question 4Answer
+
+a.
+7 9 9
+
+
+b.
+7 9 7 
+
+
+c.
+9 7 9 
+
+
+d.
+9 9 7 
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Assuming Card is the base class of Valentine, Holiday and Birthday, in order for the following code to be correct, what must be the type of the reference variable card?
+
+_________ card;
+
+card = new Valentine( "Joe", 14 ) ;
+
+card.greeting();
+
+card = new Holiday( "Bob" ) ;
+
+card.greeting();
+
+card = new Birthday( "Emily", 12 ) ;
+
+card.greeting();
+
+
+
+Question 5Answer
+
+a.
+Card
+
+
+b.
+Birthday 
+
+
+c.
+Holiday 
+
+
+d.
+Valentine 
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 6Answer
+
+a.
+If both a subclass and its superclass do not have any declared constructors, the implicit default constructor of the subclass will call super() when run.
+
+
+b.
+A super() or this() call must always be provided explicitly as the first statement in the body of a constructor. 
+
+
+c.
+If neither super() nor this() is declared as the first statement in the body of a constructor, then this() will implicitly be inserted as the first statement. 
+
+
+d.
+If super() is the first statement in the body of a constructor, then this() can be declared as the second statement. 
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Consider the following class heirarchies
+
+class A { }
+
+class B extends A { }
+
+class C extends B { }
+
+And the following method declaration
+
+public B doSomething egg {
+
+    // some valid code fragments
+
+    return xx;
+
+}
+
+Objects of which class ( from the heirarchy shown above ) can be safely substituted in place of xx in the method doSomething egg ?
+
+
+
+Question 7Answer
+
+a.
+An array object of class C 
+
+
+b.
+Object of class A
+
+
+c.
+An array object of class B 
+
+
+d.
+Object of class C 
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following modifiers can be applied to a constructor?
+
+Question 8Answer
+
+a.
+protected
+
+
+b.
+static 
+
+
+c.
+transient 
+
+
+d.
+synchronized 
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Say that there are three classes: Computer, AppleComputer, and IBMComputer. What are the likely relationships between these classes? 
+
+Question 9Answer
+
+a.
+Computer, AppleComputer and IBMComputer are sibling classes.
+
+
+b.
+Computer is a superclass, AppleComputer is a subclasses of Computer, and IBMComputer is a sublclas of AppleComputer
+
+
+c.
+Computer is the superclass, AppleComputer and IBMComputer are subclasses of Computer.
+
+
+d.
+IBMComputer is the superclass, AppleComputer and Computer are subclasses of IBMComputer.
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Say that class Rodent has a child class Rat and another child class Mouse. Class Mouse has a child class PocketMouse. Examine the following
+
+Rodent rod;
+
+Rat rat = new Rat();
+
+Mouse mos = new Mouse();
+
+PocketMouse pkt = new PocketMouse();
+
+Which one of the following will cause a compiler error?
+
+
+
+Question 10Answer
+
+a.
+rod = mos;
+
+
+b.
+pkt = null; 
+
+
+c.
+rod = rat; 
+
+
+d.
+pkt = rat;
+
+Question 11
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Analyse the following 2 classes and select the correct statement.
+
+class A {
+
+ private int x = 0;
+
+ static int y = 1;
+
+ protected int q = 2;
+
+}
+
+
+
+class B extends A {
+
+ void method() {
+
+  System.out.println(x);
+
+  System.out.printlnYes;
+
+  System.out.println(q);
+
+ }
+
+}
+
+
+
+Question 11Answer
+
+a.
+The code fails to compile because you can’t subclass a class with protected variables. 
+
+
+b.
+The code fails to compile because you can’t subclass a class with static variables. 
+
+
+c.
+The code compiles correctly, and the following is displayed:012 
+
+
+d.
+The code fails to compile because the variable x is not available to class B.
+
+Question 12
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+1.  public class MyClass {
+
+2.     public static void main(String[] args) {
+
+3.        Derived d = new Derived("hello");
+
+4.     }
+
+5.  }
+
+6.
+
+7.  class Base {
+
+8.     Base() { this("a", "b"); }
+
+9.
+
+10.    Base(String x, String y) { System.out.println(x + y); }
+
+11. }
+
+12.
+
+13. class Derived extends Base {
+
+14.    Derived(String s) { System.out.println(s); }
+
+15. }
+
+What is the output?
+
+
+
+Question 12Answer
+
+a.
+It will print hello. 
+
+
+b.
+It will print ab followed by hello.
+
+
+c.
+It will print ab 
+
+
+d.
+It will print hello followed by ab. 
+
+Question 13
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true?
+
+Question 13Answer
+
+a.
+Every Java object has a public method named equals. 
+
+
+b.
+A final class can be extended by any number of classes 
+
+
+c.
+Inheritance defines a has-a relationship between a superclass and its subclasses. 
+
+
+d.
+Every Java object has a public method named length. 
+
+Question 14
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following code, which is the simplest print statement that can be inserted into the print() method?
+
+// Filename: MyClass.java
+
+public class MyClass extends MySuperclass {
+
+    public static void main(String[] args) {
+
+        MyClass object = new MyClass();
+
+        object.print();
+
+    }
+
+    public void print() {
+
+        // INSERT CODE HERE THAT WILL PRINT
+
+        // THE "Hello, world!" STRING FROM THE Message
+
+        // CLASS.
+
+    }
+
+}
+
+class MySuperclass {
+
+    Message msg = new Message();
+
+}
+
+class Message {
+
+    // The message that should be printed:
+
+    String text = "Hello, world!";
+
+}
+
+
+
+Question 14Answer
+
+a.
+System.out.println(msg.text);
+
+
+b.
+System.out.println(super.msg.text); 
+
+
+c.
+System.out.println(object.msg.text); 
+
+
+d.
+System.out.println(Message.text); 
+
+Question 15
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+1.  class Animal {
+
+2.     String name = "No name";
+
+3.     public Animal(String nm) { name = nm; }
+
+4.  }
+
+5.
+
+6.  class DomesticAnimal extends Animal {
+
+7.     String animalFamily = "nofamily";
+
+8.     public DomesticAnimal(String family) { animalFamily = family; }
+
+9.  }
+
+10.
+
+11. public class AnimalTest {
+
+12.    public static void main(String[] args) {
+
+13.       DomesticAnimal da = new DomesticAnimal("cat");
+
+14.       System.out.println(da.animalFamily);
+
+15.    }
+
+16. }
+
+What is the result ?
+
+Question 15Answer
+
+a.
+nofamily
+
+
+b.
+Compilation fails due to an error in line 8.
+
+
+c.
+An exception is thrown at runtime. 
+
+
+d.
+cat
+
+Question 16
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given a method in a class, what access modifier do you use to restrict access to that method to only the other members of the same class?
+
+Question 16Answer
+
+a.
+volatile 
+
+
+b.
+protected 
+
+
+c.
+static 
+
+
+d.
+private
+
+Question 17
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true about the use of modifiers?
+
+Question 17Answer
+
+a.
+Subclasses of a class must reside in the same package as the class they extend. 
+
+
+b.
+If no accessibility modifier (public, protected, and private) is specified for a member declaration, the member is only accessible for classes in the same package and subclasses of its class in any package. 
+
+
+c.
+You cannot specify accessibility of local variables. They are only accessible within the block in which they are declared.
+
+
+d.
+Local variables can be declared static. 
+
+Question 18
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following statement is false?
+
+Question 18Answer
+
+a.
+A top level class in which all the members are declared private, can be declared public. 
+
+
+b.
+A final class cannnot be abstract. 
+
+
+c.
+The subclass of a non-abstract class can be declared abstract.
+
+
+d.
+All  members of the superclass are inherited by the subclass.
+
+Question 19
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which of the following modifiers cannot be applied to a top level class?
+
+Question 19Answer
+
+a.
+final
+
+
+b.
+abstract 
+
+
+c.
+private
+
+
+d.
+public 
+
+Question 20
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is correct syntax for defining a new class Jolt based on the superclass SoftDrink? 
+
+Question 20Answer
+
+a.
+class Jolt implements SoftDrink { //additional definitions go here }
+
+
+b.
+class Jolt extends SoftDrink { //additional definitions go here }
+
+
+c.
+class Jolt isa SoftDrink { //additional definitions go here }
+
+
+d.
+class Jolt defines SoftDrink { //additional definitions go here }
+
+Question 21
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Say that class Rodent has a child class Rat and another child class Mouse. Class Mouse has a child class PocketMouse. Examine the following
+
+Rodent rod;
+
+Rat rat = new Rat();
+
+Mouse mos = new Mouse();
+
+PocketMouse pkt = new PocketMouse();
+
+Which of the following array declarations is correct for an array that is expected to hold up to 10 objects of types Rat, Mouse, and PocketMouse?
+
+
+
+Question 21Answer
+
+a.
+Rodent[10] array; 
+
+
+b.
+Rodent[] array = new Rat[10]; 
+
+
+c.
+Rodent[] array = new Rodent[10];
+
+
+d.
+Rat[] array = new Rat[10]; 
+
+Question 22
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+1. public class TestPoly {
+
+2.     public static void main(String [] args ){
+
+3.         Parent p = new Child();
+
+4.     }
+
+5. }
+
+6.
+
+7. class Parent {
+
+8.     public Parent() {
+
+9.         super();
+
+10.       System.out.println("instantiate a parent");
+
+11.   }
+
+12. }
+
+13.
+
+14. class Child extends Parent {
+
+15.   public Child() {
+
+16.       System.out.println("instantiate a child");
+
+17.   }
+
+18. }
+
+What is the result?
+
+
+
+Question 22Answer
+
+a.
+instantiate a parent
+
+instantiate a child
+
+
+b.
+instantiate a child 
+
+
+c.
+instantiate a parent 
+
+
+d.
+instantiate a child
+
+instantiate a parent 
+
+Question 23
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+What restriction is there on using the super reference in a constructor?
+
+Question 23Answer
+
+a.
+Only one child class can use it. 
+
+
+b.
+It must be used in the first statement of the constructor.
+
+
+c.
+It can only be used in the parent’s constructor. 
+
+
+d.
+It must be used in the last statement of the constructor. 
+
+Question 24
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following code, which is the simplest print statement that can be inserted into the print() method?
+
+// Filename: MyClass.java
+
+public class MyClass extends MySuperclass {
+
+ public static void main(String[] args) {
+
+  MyClass object = new MyClass();
+
+  object.print();
+
+ }
+
+
+
+ public void print() {
+
+  // INSERT CODE HERE THAT WILL PRINT
+
+  // THE "Hello, world!" STRING FROM THE Message
+
+  // CLASS.
+
+ }
+
+}
+
+
+
+class MySuperclass {
+
+ Message msg = new Message();
+
+}
+
+
+
+class Message {
+
+ // The message that should be printed:
+
+ String text = "Hello, world!";
+
+}
+
+
+
+Question 24Answer
+
+a.
+System.out.println(Message.text); 
+
+
+b.
+System.out.println(object.msg.text); 
+
+
+c.
+System.out.println(super.msg.text); 
+
+
+d.
+System.out.println(msg.text);
+
+Question 25
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which of the following statements are incorrect?
+
+Question 25Answer
+
+a.
+private members of class can be inherited by a sub class, and become protected members in sub class.
+
+
+b.
+private members of class can only be accessed by other members of the class.
+
+
+c.
+protected members of a class can be inherited by a sub class, and become private members of the sub class.
+
+
+d.
+public members of class can be accessed by any code in the program.
+
+Question 26
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. class MySuper {
+
+2.     public MySuper(int i) {
+
+3.         System.out.println("super " + i);
+
+4.     }
+
+5. }
+
+6.
+
+7. public class MySub extends MySuper {
+
+8.     public MySub() {
+
+9.         super(2);
+
+10.       System.out.println("sub");
+
+11.   }
+
+12.
+
+13.   public static void main(String [] args) {
+
+14.       MySuper sup = new MySub();
+
+15.   }
+
+16. }
+
+What is the result?
+
+
+
+Question 26Answer
+
+a.
+sub
+
+super 2 
+
+
+b.
+super 2
+
+sub
+
+
+c.
+Compilation fails at line 9. 
+
+
+d.
+Compilation fails at line 14. 
+
+Question 27
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following statement is false?
+
+Question 27Answer
+
+a.
+A final class cannnot be abstract. 
+
+
+b.
+A top level class in which all the members are declared private, can be declared public. 
+
+
+c.
+The subclass of a non-abstract class can be declared abstract.
+
+
+d.
+All  members of the superclass are inherited by the subclass.
+
+Question 28
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+The concept of inheritance provides the idea of
+
+Question 28Answer
+
+a.
+data hiding
+
+
+b.
+all of these
+
+
+c.
+Taking more than one form
+
+
+d.
+reusability
+
+Question 29
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Can an object of a child type be assigned to a variable of the parent type? For example,
+
+Card crd;
+
+BirthDay bd = new BirthDay("Lucinda", 42);
+
+crd = bd; // is this correct?
+
+
+
+Question 29Answer
+
+a.
+Yes-an object can be assigned to a reference variable of the parent type.
+
+
+b.
+Yes-any object can be assigned to any reference variable. 
+
+
+c.
+No-but a object of parent type can be assigned to a variable of child type. 
+
+
+d.
+No-there must always be an exact match between the variable and the object types. 
+
+Question 30
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+What type of inheritance does Java have? 
+
+Question 30Answer
+
+a.
+multiple inheritance
+
+
+b.
+class inheritance
+
+
+c.
+single inheritance
+
+
+d.
+double inheritance
+
+Question 31
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+What restriction is there on using the super reference in a constructor?
+
+Question 31Answer
+
+a.
+It must be used in the last statement of the constructor. 
+
+
+b.
+Only one child class can use it. 
+
+
+c.
+It must be used in the first statement of the constructor.
+
+
+d.
+It can only be used in the parent’s constructor. 
+
+Question 32
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+class A { A(int i) {} }      // 1
+
+class B extends A { }    // 2
+
+Which one of the following statements is correct?
+
+
+
+Question 32Answer
+
+a.
+Compiles successfully without any errors.
+
+
+b.
+Compile-time error at 1.
+
+
+c.
+Compile-time error at 2. 
+
+
+d.
+compiler attempts to create a default constructor for class A. 
+
+Question 33
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+class B { int m = 7; }
+
+class D extends B { int m = 9; }
+
+public class TestBaseDerived {
+
+    public static void main(String[] args) {
+
+    B b = new B();
+
+        D d = new D();
+
+        B bd = new D();
+
+        System.out.printf("%d %d %d", b.m, d.m, bd.m);
+
+    }
+
+}
+
+What will be the output on executing the above code ?
+
+
+
+Question 33Answer
+
+a.
+9 7 9
+
+
+b.
+9 9 7
+
+
+c.
+7 9 9
+
+
+d.
+7 9 7 
+
+Question 34
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following code, which of these constructors can be added to MySub class without causing a compile-time error?
+
+class MySuper {
+
+    int number;
+
+    MySuper(int i) { number = i; }
+
+}
+
+class MySub extends MySuper {
+
+    int count;
+
+    MySub(int cnt, int num) {
+
+        super(num);
+
+        count=cnt;
+
+    }
+
+    // INSERT ADDITIONAL CONSTRUCTOR HERE
+
+}
+
+
+
+Question 34Answer
+
+a.
+MySub() {} 
+
+
+b.
+MySub(int cnt) { this(cnt, cnt); }
+
+
+c.
+MySub(int cnt) { count = cnt; super(cnt); } 
+
+
+d.
+MySub(int cnt) { super(cnt); this(cnt, 0); } 
+
+Question 35
+Not answered
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+class Vehicle { }
+
+class FourWheeler extends Vehicle { }
+
+class Car extends FourWheeler { }
+
+public class TestVehicle
+
+{
+
+    public static void main(String[] args)
+
+    {
+
+        Vehicle v = new Vehicle();
+
+        FourWheeler f = new FourWheeler();
+
+        Car c = new Car();
+
+        xxxxxxx
+
+    }
+
+}
+
+Which of the following statement is legal, which can be substituted for xxxxxxx?
+
+
+
+Question 35Answer
+
+a.
+v = c;
+
+
+b.
+c = v; 
+
+
+c.
+f = v; 
+
+
+d.
+c = f; 
