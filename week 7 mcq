@@ -1,0 +1,1169 @@
+Question 1
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which is a valid declaration within an interface?
+
+Question 1Answer
+
+a.
+static char madness(double duty); 
+
+
+b.
+public Boolean madness(long bow);
+
+
+c.
+final void madness(short stop); 
+
+
+d.
+protected short stop = 23; 
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the field declaration is legal within the body of an interface?
+
+Question 2Answer
+
+a.
+protected static int answer = 42; 
+
+
+b.
+private final static int answer = 42; 
+
+
+c.
+int answer = 42;
+
+
+d.
+volatile static int answer = 42; 
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+You decide that you wish to add your application’s class to a group of classes that are stored in the location /examples/basics.
+
+Complete the code to do this
+
+Question 3Answer
+
+a.
+package examples/basics; 
+
+
+b.
+import examples.basics; 
+
+
+c.
+package examples.basics;
+
+
+d.
+import package examples.basics; 
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. public interface Constants {
+
+2.     static final int SEASON_SUMMER=1;
+
+3.     final int SEASON_SPRING=2;
+
+4.     static int SEASON_AUTUMN=3;
+
+5.     public static const int SEASON_WINTER=4;
+
+6. }
+
+What is the expected behaviour on compiling the above code?
+
+
+
+Question 4Answer
+
+a.
+Compilation error occurs at line 3. 
+
+
+b.
+Compilation error occurs at line 4. 
+
+
+c.
+Compilation error occurs at line 5. 
+
+
+d.
+Compilation error occurs at line 2. 
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the code below:
+
+interface MyInterface {
+
+    void doSomething egg ;
+
+}
+
+class MyClass implements MyInterface {
+
+    // xx
+
+}
+
+Choose the valid option that can be substituted in place of xx in the MyClass class.
+
+
+
+Question 5Answer
+
+a.
+protected void doSomething egg { /* valid code fragments */ } 
+
+
+b.
+private void doSomething egg { /* valid code fragments */ } 
+
+
+c.
+public native void doSomething egg ;
+
+
+d.
+void doSomething egg { /* valid code fragments */ } 
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which is true about the import statement in Java?
+
+Question 6Answer
+
+a.
+The import statements must appear before any package statement is declared. 
+
+
+b.
+The import statement must be the first statement after any package declaration in a file.
+
+
+c.
+The import statement is mandatory when using classes of other packages since there is no other way to use a class. 
+
+
+d.
+When .* is used in an import statement, all the classes in that package and the sub-packages will be imported. 
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which is true about the package statement in Java?
+
+Question 7Answer
+
+a.
+There can be more than one package statement. 
+
+
+b.
+It can appear anywhere in the file as long as the syntax is correct. 
+
+
+c.
+It should appear after all the import statements but before the class declaration. 
+
+
+d.
+It should be the first non-comment line in the Java source file.
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which is a valid method signature in an interface?
+
+Question 8Answer
+
+a.
+protected float getVol(float x); 
+
+
+b.
+public static void main(String [] args); 
+
+
+c.
+private int getArea(); 
+
+
+d.
+boolean setFlag(Boolean [] test []);
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+interface Count {
+
+ short counter = 0;
+
+
+
+ void countUp();
+
+}
+
+
+
+public class TestCount implements Count {
+
+
+
+ public static void main(String[] args) {
+
+  TestCount t = new TestCount();
+
+  t.countUp();
+
+ }
+
+
+
+ public void countUp() {
+
+  for (int x = 6; x > counter; x--, ++counter) {
+
+   System.out.print(" " + counter);
+
+  }
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 9Answer
+
+a.
+Compilation fails
+
+
+b.
+0 1 2 3 
+
+
+c.
+1 2 3 
+
+
+d.
+1 2 3 4 
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is/are advantages of packages?
+
+Question 10Answer
+
+a.
+All of the mentioned
+
+
+b.
+Packages avoid name clashes
+
+
+c.
+Classes, even though they are visible outside their package, can have fields visible to packages only
+
+
+d.
+We can have hidden classes that are used by the packages, but not visible outside.
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which is correct option about java interface?
+
+Question 11Answer
+
+a.
+All of the mentioned
+
+
+b.
+Interface is used to achieve multiple inheritance in java.
+
+
+c.
+An interface can extend another interface.
+
+
+d.
+Object of an interface cannot be created.
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is not an attribute common to both abstract classes and interfaces?
+
+Question 12Answer
+
+a.
+They both can contain static methods.
+
+
+b.
+They both can contain abstract methods.
+
+
+c.
+They both can contain default methods.
+
+
+d.
+They both can contain static variables.
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true about interfaces?
+
+Question 13Answer
+
+a.
+The keyword extends is used to specify that an interface inherits from another interface.
+
+
+b.
+The keyword extends is used to specify that a class inherits from an interface. 
+
+
+c.
+The keyword implements is used to specify that an interface inherits from another interface. 
+
+
+d.
+The keyword implements is used to specify that a class inherits from another class. 
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+The fields in an interface are implicitly specified as
+
+Question 14Answer
+
+a.
+protected
+
+
+b.
+private
+
+
+c.
+static and final
+
+
+d.
+static
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+interface I1 {
+
+    void draw();
+
+}
+
+class C implements I1 {
+
+    xxxxxx
+
+}
+
+Which of the following when inserted at xxxxxx is a legal definition and implementation?
+
+
+
+Question 15Answer
+
+a.
+protected void draw() { } 
+
+
+b.
+abstract void draw() { } 
+
+
+c.
+void draw() { } 
+
+
+d.
+public void draw() { }
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is true about interfaces in java.
+
+
+
+1) An interface can contain following type of members.
+
+....public, static, final fields (i.e., constants) 
+
+....default and static methods with bodies
+
+
+
+2) An instance of interface can be created.
+
+
+
+3) A class can implement multiple interfaces.
+
+
+
+4) Many classes can implement the same interface.
+
+Question 16Answer
+
+a.
+1, 2 and 4
+
+
+b.
+2, 3 and 4
+
+
+c.
+1, 3 and 4
+
+
+d.
+1, 2, 3 and 4
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of the following code?
+
+interface X
+
+{
+
+    int i = 5;
+
+}
+
+class Y implements X 
+
+{
+
+    void f()
+
+    {
+
+     i = 10;
+
+     System.out.println("i="+i);
+
+        
+
+    }
+
+}
+
+public class Main {
+
+ public static void main(String[] args) {
+
+  Y obj = new Y();
+
+  obj.f(); 
+
+ }
+
+}
+
+Question 17Answer
+
+a.
+5
+
+
+b.
+0
+
+
+c.
+10
+
+
+d.
+Compile time error
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following statements about interfaces is not true?
+
+Question 18Answer
+
+a.
+An interface can extend another interface.
+
+
+b.
+A class can extend another class.
+
+
+c.
+An interface can implement another interface.
+
+
+d.
+A class can implement two interfaces.
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement is true about interfaces?
+
+Question 19Answer
+
+a.
+Members of an interface are never static. 
+
+
+b.
+Members of an interface can always be declared static. 
+
+
+c.
+Interfaces allow multiple implementation inheritance.
+
+
+d.
+Interfaces can extend any number of other interfaces. 
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Suppose a class named App1 is located in the samples.messages package. You have compiled the class. How do you execute the class?
+
+Question 20Answer
+
+a.
+java samples.messages.App1.class 
+
+
+b.
+java samples.messages.App1
+
+
+c.
+java App1 
+
+
+d.
+javac samples.messages.App1 
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Imagine you are working with another team to build an application. You are developing code that uses a class that the other team has not finished writing yet. Which element of Java would best facilitate this development, allowing easy integration once the other team’s code is complete?
+
+Question 21Answer
+
+a.
+An access modifier
+
+
+b.
+static methods
+
+
+c.
+An interface
+
+
+d.
+An abstract class
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Predict the output of following Java program
+
+// Note static keyword after import.
+
+import static java.lang.System.*;
+
+   
+
+class StaticImportDemo
+
+{
+
+   public static void main(String args[])
+
+   {      
+
+        out.println("REC");
+
+   }
+
+}
+
+Question 22Answer
+
+a.
+Compiler Error
+
+
+b.
+Runtime Error
+
+
+c.
+None of the mentioned
+
+
+d.
+REC
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+interface I1 {} 
+
+interface I2 {}
+
+class Base implements I1 {}
+
+class Sub extends Base implements I2 {}
+
+class Red {
+
+    public static void main(String args[]) {
+
+        Sub s1 = new Sub();I2 i2 = s1;      // 1
+
+        I1 i1 = s1;                                    // 2
+
+        Base base = s1;                          // 3
+
+Sub s2 = (SuB. base;                    // 4
+
+    }
+
+}
+
+A compile-time error is generated at which line?
+
+
+
+Question 23Answer
+
+a.
+4
+
+
+b.
+3
+
+
+c.
+2
+
+
+d.
+No error will be generated.
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Interfaces can have method implementation for few methods.
+
+Question 24Answer
+
+a.
+True
+
+
+b.
+False
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which declaration in the below code represents a valid declaration within the interface?
+
+1. public interface TestInterface {
+
+2.     volatile long value=98L;
+
+3.     transient long amount=67L;
+
+4.     Long calculate(long input);
+
+5.     static Integer getValue();
+
+6. }
+
+
+
+Question 25Answer
+
+a.
+Declaration at line 5. 
+
+
+b.
+Declaration at line 2. 
+
+
+c.
+Declaration at line 3.
+
+
+d.
+Declaration at line 4. 
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. interface Base {
+
+2.     boolean m1 ();
+
+3.     byte m2(short s);
+
+4. }
+
+Which of the following code fragment will compile?
+
+
+
+Question 26Answer
+
+a.
+interface Base2 implements Base {} 
+
+
+b.
+class Class2 implements Base {
+
+boolean m1() { return false; }
+
+byte m2(short s) { return 42; } }
+
+
+c.
+abstract class Class2 implements Base {
+
+public boolean m1() { return (7 > 4); } }
+
+
+d.
+abstract class Class2 extends Base {
+
+public boolean m1() { return true; } } 
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+The variables in an interface cannot be,
+
+Question 27Answer
+
+a.
+static
+
+
+b.
+protected
+
+
+c.
+final
+
+
+d.
+constant
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+1. interface DoMath {
+
+2. double getArea(int raD. ; }
+
+3.
+
+4. interface MathPlus {
+
+5. double getVol(int b, int h); }
+
+6.
+
+7.
+
+8.
+
+Which code fragment inserted at lines 7 and 8 will compile?
+
+
+
+Question 28Answer
+
+a.
+interface AllMath extends DoMath {
+
+float getAvg(int h, int l); }
+
+
+b.
+class AllMath extends DoMath {
+
+double getArea(int r); } 
+
+
+c.
+interface AllMath implements MathPlus {
+
+double getVol(int x, int y); } 
+
+
+d.
+class AllMath implements MathPlus {
+
+double getArea(int raD. ; } 
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Suppose you are creating a class named Button that you want to include in a group of related classes called controls.
+
+Identify the correct code that includes the class in that group.
+
+Question 29Answer
+
+a.
+package controls;
+
+
+b.
+public class Button 
+
+
+c.
+import controls; 
+
+
+d.
+package Button; 
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+The methods in an interface can not be,
+
+Question 30Answer
+
+a.
+abstract
+
+
+b.
+static
+
+
+c.
+None of the mentioned
+
+
+d.
+private
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. public interface IDrawable {
+
+2.     static final int SHAPE_CIRCLE=1;
+
+3.     final int SHAPE_SQUARE=2;
+
+4.     static int SHAPE_RECTANGLE=3;
+
+5.     public static const int SHAPE_TRIANGLE=4;
+
+6. }
+
+What is the expected behaviour on compiling the above code?
+
+
+
+Question 31Answer
+
+a.
+Compilation error occurs at line 5. 
+
+
+b.
+Compilation error occurs at line 3. 
+
+
+c.
+Compilation error occurs at line 2. 
+
+
+d.
+Compilation error occurs at line 4. 
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. public interface Alpha {
+
+2. String MESSAGE = "Welcome";
+
+3. public void display();
+
+4. }
+
+To create an interface called Beta that has Alpha as its parent, which interface declaration is correct?
+
+
+
+Question 32Answer
+
+a.
+public interface Beta parent Alpha { } 
+
+
+b.
+public interface Beta instanceOf Alpha {} 
+
+
+c.
+public interface Beta implements Alpha {} 
+
+
+d.
+public interface Beta extends Alpha { }
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is true?
+
+Question 33Answer
+
+a.
+A class can extend more than one class.
+
+
+b.
+A class can extend only one class but many interfaces.
+
+
+c.
+A class can extend one class and implement many interfaces.
+
+
+d.
+An interface can implement many interfaces.
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following is/are true about packages in Java?
+
+1) Every class is part of some package. 
+
+2) All classes in a file are part of the same package. 
+
+3) If no package is specified, the classes in the file 
+
+   go into a special unnamed package 
+
+4) If no package is specified, a new package is created with 
+
+   folder name of class and the class is put in this package. 
+
+Question 34Answer
+
+a.
+Only 1 and 3
+
+
+b.
+Only 1, 2 and 3
+
+
+c.
+Only 4
+
+
+d.
+Only 1, 2 and 4
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given:
+
+1. interface I1 {
+
+2.    int process();
+
+3. }
+
+4. class C implements I1 {
+
+5.     int process() {
+
+6.         System.out.println("process of C invoked");
+
+7.         return 1;
+
+8.     }
+
+9.     void display() {
+
+10.        System.out.println("display of C invoked");
+
+11.    }
+
+12.}
+
+13.public class TestC {
+
+14.    public static void main(String... args) {
+
+15.        C c = new C();
+
+16.        c.process();
+
+17.    }
+
+18.}
+
+What is the expected behaviour?
+
+
+
+Question 35Answer
+
+a.
+Compilation error at line 5. 
+
+
+b.
+Prints "process of C invoked".
+
+
+c.
+Compilation error at line 9. 
+
+
+d.
+Runtime error occurs. 
