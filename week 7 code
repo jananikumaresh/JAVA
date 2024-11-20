@@ -1,0 +1,188 @@
+1
+interface RBI {
+    String parentBank = "RBI";
+    
+    
+    
+    double rateofInterest();
+    
+    
+    default void policyNote(){
+        System.out.println("RBI has updated new regulations in 2024.");
+    }
+    
+    
+    static void regulations(){
+        System.out.println("RBI has a new Policy issued in 2023");
+    }
+}
+
+
+class SBI implements RBI {
+    @Override
+    public double rateofInterest(){
+        return 7.6;
+    }
+}
+
+
+class Karur implements RBI {
+    @Override
+    public double rateofInterest(){
+        return 7.4;
+    }
+}
+
+
+public class Main{
+    public static void main(String [] args){
+        
+        RBI.regulations();
+        
+        
+        SBI sbiBank = new SBI();
+        Karur karurBank = new Karur();
+        
+        
+        sbiBank.policyNote();
+        
+        
+        
+        System.out.println("SBI rate of interest: " + sbiBank.rateofInterest() + " per annum."); 
+        System.out.println("Karur rate of interest: " + karurBank.rateofInterest() + " per annum.");
+    }
+}
+
+2
+import java.util.Scanner;
+ interface Sports {
+public void setHomeTeam(String name);
+public void setVisitingTeam(String name); 
+   
+}
+ interface Football extends Sports {
+public void homeTeamScored(int points);
+public void visitingTeamScored(int points);
+
+}
+class College implements Football {
+    private String homeTeam;
+    private String visitingTeam;
+    private int homeTeamPoints;
+    private int visitingTeamPoints;
+    @Override
+    public void setHomeTeam(String name){
+        this.homeTeam = name;
+          
+   }
+   @Override
+   public void setVisitingTeam(String name){
+       this.visitingTeam = name;
+   }
+   @Override
+   public void homeTeamScored(int points){
+       this.homeTeamPoints = points;
+   }
+   @Override
+   public void visitingTeamScored(int points){
+       this.visitingTeamPoints = points;
+   }
+   
+   public void displayResult(){
+       System.out.println(homeTeam + " " + homeTeamPoints + " scored");
+       System.out.println(visitingTeam + " " + visitingTeamPoints + " scored");
+       if (homeTeamPoints > visitingTeamPoints){
+           System.out.println(homeTeam + " is the winner!");
+       } else if (visitingTeamPoints > homeTeamPoints){
+           System.out.println(visitingTeam + " is the winner!");
+       } else {
+           System.out.println("It's a tie match.");
+       }
+   }
+}
+
+public class Main{
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+        
+        
+        String homeTeam = scanner.nextLine();
+        String visitingTeam = scanner.nextLine();
+        int homeTeamScore = scanner.nextInt();
+        int visitingTeamScore = scanner.nextInt();
+        
+        
+        College collegeMatch = new College();
+        
+        collegeMatch.setHomeTeam(homeTeam);
+        collegeMatch.setVisitingTeam(visitingTeam);
+        collegeMatch.homeTeamScored(homeTeamScore);
+        collegeMatch.visitingTeamScored(visitingTeamScore);
+        
+        collegeMatch.displayResult();
+    }
+}
+
+3
+import java.util.Scanner;
+
+interface Playable {
+    void play();
+}
+
+class Football implements Playable {
+    String name;
+    
+    public Football(String name){
+        this.name = name;
+    }
+    public void play(){
+        System.out.println(name + " is Playing football");
+    }
+}
+
+class Volleyball implements Playable{
+    String name;
+    
+    public Volleyball(String name) {
+        this.name = name;
+    }
+    
+    public void play() {
+        System.out.println(name + " is Playing volleyball");
+    }
+}
+
+class Basketball implements Playable {
+    String name;
+    
+    public Basketball(String name) {
+        this.name = name;
+    }
+        
+        public void play(){
+            System.out.println(name + " is Playing basketball");
+        }
+    }
+    
+    public class Main {
+        public static void main(String [] args){
+            Scanner scanner = new Scanner(System.in);
+            
+            
+            String footballPlayerName = scanner.nextLine();
+            String volleyballPlayerName = scanner.nextLine();
+            String basketballPlayerName = scanner.nextLine();
+            
+            Football footballPlayer = new Football(footballPlayerName);
+            Volleyball volleyballPlayer = new Volleyball(volleyballPlayerName);
+            Basketball basketballPlayer = new Basketball(basketballPlayerName);
+            
+            
+            footballPlayer.play();
+            volleyballPlayer.play();
+            basketballPlayer.play();
+            
+            scanner.close();
+        }
+    }
