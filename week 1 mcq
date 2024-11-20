@@ -1,0 +1,1022 @@
+What command in Java 2 SDK should be used to compile the following code contained in a file called HelloWorld.java?
+
+public class HelloWorld {
+
+ public static void main(String[] args) {
+
+  System.out.println("Hello World!");
+
+ }
+
+}
+
+Question 1Answer
+
+a.
+java HelloWorld
+
+
+b.
+javac HelloWorld
+
+
+c.
+javac HelloWorld.java
+
+
+d.
+java HelloWorld.java
+
+Feedback
+The correct answer is:
+javac HelloWorld.java
+
+Question 2
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+What is the numerical range of a char?
+
+Question 2Answer
+
+a.
+-128 to 127
+
+
+b.
+-(2 ^ 15) to (2 ^ 15) - 1
+
+
+c.
+0 to 65535
+
+
+d.
+0 to 32767
+
+Feedback
+The correct answer is:
+0 to 65535
+
+Question 3
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following is a valid declaration of boolean?
+
+Question 3Answer
+
+a.
+boolean b5 = Boolean.false();
+
+
+b.
+boolean b3 = yes;
+
+
+c.
+boolean b2 = no; 
+
+
+d.
+boolean b4 = false;
+
+Feedback
+The correct answer is:
+boolean b4 = false;
+
+Question 4
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following is a valid declaration of String?
+
+Question 4Answer
+
+a.
+String S3 = (String) 'face'; 
+
+
+b.
+String S4=(String)\ufeed; 
+
+
+c.
+String S1='null'; 
+
+
+d.
+String S2=null;
+
+Feedback
+The correct answer is:
+String S2=null;
+
+Question 5
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which range of values is valid for all integral types, where n is the number of bits?
+
+Question 5Answer
+
+a.
+-2^(n-1) to 2^(n-1)+1 
+
+
+b.
+-2^No-1 to 2^(n-1)-1
+
+
+c.
+2^(n-1) to 2^(n+1)+1 
+
+
+d.
+-2^(n-1) to 2^(n-1)-1
+
+Feedback
+The correct answer is:
+-2^(n-1) to 2^(n-1)-1
+
+Question 6
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Given a variable x of type int (which contains a positive value), which is the correct way of doubling the value of x, barring any wrapping of out-of-range intermediate values?
+
+Question 6Answer
+
+a.
+x >> 1;
+
+
+b.
+x << 1;
+
+
+c.
+x << -1;
+
+
+d.
+x >>> 1;
+
+Feedback
+The correct answer is:
+x << 1;
+
+Question 7
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+What is the value of -32 % 6?
+
+Question 7Answer
+
+a.
+5
+
+
+b.
+-5
+
+
+c.
+-2
+
+
+d.
+2
+
+Feedback
+The correct answer is:
+-2
+
+Question 8
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Suppose you have four int variables: x, y, z, and result.
+
+Which expression sets the value of z to x if result has a value of 1, and the value of y to x otherwise?
+
+Question 8Answer
+
+a.
+x = (result == 1) : y ? z;
+
+
+b.
+x = (result == 1) ? y : z;
+
+
+c.
+x = (result == 1) : z ? y;
+
+
+d.
+x = (result == 1) ? z : y;
+
+Feedback
+The correct answer is:
+x = (result == 1) ? z : y;
+
+Question 9
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which primitive type ranges from -2^31 to (2^31)-1?
+
+Question 9Answer
+
+a.
+byte
+
+
+b.
+int
+
+
+c.
+short
+
+
+d.
+long
+
+Feedback
+The correct answer is:
+int
+
+Question 10
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Given:
+
+int x = 7;
+
+x <<= 2;
+
+What best describes the second line of code?
+
+Question 10Answer
+
+a.
+It assigns the value to x after shifting 2 to x places left.
+
+
+b.
+It assigns the value to x after shifting x to 2 places left.
+
+
+c.
+It is invalid because there is no such operator as <<=. 
+
+
+d.
+It assigns the value of 2 to x, and shifts it to left by one place. 
+
+Feedback
+The correct answer is:
+It assigns the value to x after shifting x to 2 places left.
+
+Question 11
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following is correct?
+
+128>>> 1 gives
+
+Question 11Answer
+
+a.
+-64
+
+
+b.
+-32
+
+
+c.
+64
+
+
+d.
+32
+
+Feedback
+The correct answer is:
+64
+
+Question 12
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following is a valid initialization?
+
+Question 12Answer
+
+a.
+long l = 79,653; 
+
+
+b.
+boolean b = TRUE; 
+
+
+c.
+int i = 0xDeadCafe;
+
+
+d.
+float f = 27.893; 
+
+Feedback
+The correct answer is:
+int i = 0xDeadCafe;
+
+Question 13
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which one of the following is a short-circuit operator?
+
+Question 13Answer
+
+a.
+&&
+
+
+b.
+^
+
+
+c.
+|
+
+
+d.
+&
+
+Feedback
+The correct answer is:
+&&
+
+Question 14
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which one of these lists contains only Java programming language keywords? 
+
+Question 14Answer
+
+a.
+strictfp, constant, super, implements, do
+
+
+b.
+byte, break, assert, switch, include
+
+
+c.
+class, if, void, long, Int, continue
+
+
+d.
+goto, instanceof, native, finally, default, throws
+
+Feedback
+The correct answer is:
+goto, instanceof, native, finally, default, throws
+
+Question 15
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following keywords is reserved but not used in Java?
+
+Question 15Answer
+
+a.
+const
+
+
+b.
+unsigned 
+
+
+c.
+delete 
+
+
+d.
+constant 
+
+Feedback
+The correct answer is:
+const
+
+Question 16
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Why is the main() method special in Java program?
+
+Question 16Answer
+
+a.
+It is where the execution of a Java program starts.
+
+
+b.
+The main() method must be the only static method in a program.
+
+
+c.
+Only the main() method may create objects.
+
+
+d.
+Every class must have a main() method.
+
+Feedback
+The correct answer is:
+It is where the execution of a Java program starts.
+
+Question 17
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following is a non-primitive data type in Java?
+
+Question 17Answer
+
+a.
+String
+
+
+b.
+float
+
+
+c.
+double
+
+
+d.
+int
+
+Feedback
+The correct answer is:
+String
+
+Question 18
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+If i is an int and s is a short, how do you assign i to s?
+
+Question 18Answer
+
+a.
+s = (short) i;
+
+
+b.
+i = (int) s;
+
+
+c.
+i = s;
+
+
+d.
+s = i;
+
+Feedback
+The correct answer is:
+s = (short) i;
+
+Question 19
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which is a reserved word in the Java programming language? 
+
+Question 19Answer
+
+a.
+native
+
+
+b.
+method
+
+
+c.
+subclasses
+
+
+d.
+reference
+
+Feedback
+The correct answer is:
+native
+
+Question 20
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+What is the default data type of the literal represented as 48.0?
+
+Question 20Answer
+
+a.
+byte
+
+
+b.
+double
+
+
+c.
+float
+
+
+d.
+int
+
+Feedback
+The correct answer is:
+double
+
+Question 21
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Given the following code snippet:
+
+double sum = 10.0, price=100;
+
+sum += price>=100 ? price*1.1 : price;
+
+What value is placed in sum? Choose the most appropriate answer.
+
+Question 21Answer
+
+a.
+110
+
+
+b.
+120
+
+
+c.
+100
+
+
+d.
+90
+
+Feedback
+The correct answer is:
+120
+
+Question 22
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following primitive data type is an integer type?
+
+Question 22Answer
+
+a.
+double
+
+
+b.
+float
+
+
+c.
+byte
+
+
+d.
+boolean
+
+Feedback
+The correct answer is:
+byte
+
+Question 23
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which one of the following primitive type conversion is permitted implicitly without using casting?
+
+Question 23Answer
+
+a.
+double to long 
+
+
+b.
+double to float 
+
+
+c.
+long to int 
+
+
+d.
+float to double
+
+Feedback
+The correct answer is:
+float to double
+
+Question 24
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which one of the below expression is equivalent to 16>>2?
+
+Question 24Answer
+
+a.
+16*2
+
+
+b.
+16*4
+
+
+c.
+16/2
+
+
+d.
+16/4
+
+Feedback
+The correct answer is:
+16/4
+
+Question 25
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Given char c = 'A';
+
+What is the simplest way to convert the character value in c into an int?
+
+Question 25Answer
+
+a.
+int i = c;
+
+
+b.
+int i = (int) c; 
+
+
+c.
+int i = Character.getNumericValue(c); 
+
+
+d.
+int i = int (c); 
+
+Feedback
+The correct answer is:
+int i = c;
+
+Question 26
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following is a valid Java identifier?
+
+Question 26Answer
+
+a.
+3numbers 
+
+
+b.
+%percent 
+
+
+c.
+_underscore
+
+
+d.
+@attherate 
+
+Feedback
+The correct answer is:
+_underscore
+
+Question 27
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+What will happen if you try to compile and run the following code?
+
+int a = 200;
+
+byte b = a;
+
+System.out.println("The value of b is " + b);
+
+Question 27Answer
+
+a.
+It will compile and print The value of b is 200
+
+
+b.
+It will compile but cause an error at runtime
+
+
+c.
+Compile-time error
+
+
+d.
+It will compile and print The value of b is -56
+
+Feedback
+The correct answer is:
+Compile-time error
+
+Question 28
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+What is the value of x after this code is run?
+
+int x = 3;
+
+int y = 3;
+
+x += (y + x * 2);
+
+Question 28Answer
+
+a.
+11
+
+
+b.
+9
+
+
+c.
+12
+
+
+d.
+10
+
+Feedback
+The correct answer is:
+12
+
+Question 29
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following variable initialization is invalid?
+
+Question 29Answer
+
+a.
+byte myByte=254;
+
+
+b.
+int myInt = 0xFACE; 
+
+
+c.
+double myDouble=12341.509D; 
+
+
+d.
+long myLong=45678L; 
+
+Feedback
+The correct answer is:
+byte myByte=254;
+
+Question 30
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+If x, y, and z are all integers, which expression will produce a runtime error?
+
+NOTE: The expressions are always evaluated with all the integers having a value of 1.
+
+Question 30Answer
+
+a.
+z = x/y--; 
+
+
+b.
+z = y/x--; 
+
+
+c.
+z = -x/x;
+
+
+d.
+z = y%--x
+
+Feedback
+The correct answer is:
+z = y%--x
+
+Question 31
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which primitive type ranges from -2^15 to (2^15)-1?
+
+Question 31Answer
+
+a.
+int
+
+
+b.
+byte
+
+
+c.
+short
+
+
+d.
+char
+
+Feedback
+The correct answer is:
+short
+
+Question 32
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following is correct?
+
+Question 32Answer
+
+a.
+16 >>> 2 gives 2 
+
+
+b.
+2 << 1 gives 2 
+
+
+c.
+4 << 2 gives 2 
+
+
+d.
+8 >> 2 gives 2
+
+Feedback
+The correct answer is:
+8 >> 2 gives 2
+
+Question 33
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+The primitive type char in Java consists of:
+
+Question 33Answer
+
+a.
+16 bits
+
+
+b.
+24 bits
+
+
+c.
+8 bits
+
+
+d.
+32 bits
+
+Feedback
+The correct answer is:
+16 bits
+
+Question 34
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Given:
+
+int a = 4;
+
+byte b = 0;
+
+Which line assigns the value of a to b?
+
+Question 34Answer
+
+a.
+b = byte(a); 
+
+
+b.
+b = (byte) a;
+
+
+c.
+b = byte a; 
+
+
+d.
+b = a; 
+
+Feedback
+The correct answer is:
+b = (byte) a;
+
+Question 35
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Given a variable x of type int (which can contain a negative value), which of these expressions always gives a positive number irrespective of the value of x?
+
+Question 35Answer
+
+a.
+x << 1; 
+
+
+b.
+x >>> 1;
+
+
+c.
+x >> 1;
+
+
+d.
+x << 2;
+
+Feedback
+The correct answer is:
+x >>> 1;
