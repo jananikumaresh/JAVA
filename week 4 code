@@ -1,0 +1,115 @@
+1
+public class Mobile{
+    private String manufacturer;
+    private String operatingSystem;
+    public String color;
+    public int cost;
+    
+    public Mobile(String manufacturer, String operatingSystem, String color, int cost){
+        this.manufacturer = manufacturer;
+        this.operatingSystem = operatingSystem;
+        this.color = color;
+        this.cost = cost;
+    }
+    
+    public void setManufacturer(String manufacturer){
+        this.manufacturer = manufacturer;
+    }
+    
+    public String getManufacturer (){
+        return manufacturer;
+    }
+    
+    public void setOperatingSystem(String operatingSystem){
+        this.operatingSystem = operatingSystem;
+    }
+    
+    public String getrOperatingSystem(){
+        return operatingSystem;
+    }
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    public String getColor() {
+        return color;
+    }
+    
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+    
+    public int getCost() {
+        return cost;
+    }
+    
+    @Override
+    public String toString() {
+        return "manufacturer = " + manufacturer +
+        "\noperating_system = " + operatingSystem +
+        "\ncolor = " + color +
+        "\ncost = " + cost;
+    }
+    
+    public static void main(String [] args){
+        Mobile mobile = new Mobile("Redmi", "Andriod", "Blue", 34000);
+        System.out.println(mobile);
+    }
+}
+        
+
+2
+class Student {
+    
+    private String name;
+    
+    private int rollNo;
+    
+    public Student() {
+        
+        System.out.println("No-arg constructor is invoked");
+    }
+    
+    
+    public Student (String name){
+        
+        System.out.println("1 arg constructor is invoked");
+    }
+    
+    public Student(String name, int rollNo){
+        
+        System.out.println("2 arg constructor is invoked");
+        
+        
+    }
+    
+    public void display(){
+    }
+}
+public class TestStudent {
+    public static void main(String [] args){
+        Student student1 = new Student();
+        student1.display();
+        Student student2 = new Student("Rajalakshmi"); student2.display();
+        Student student3= new Student("Lakshmi", 101); student3.display();
+        System.out.println("Name =null , Roll no = 0");
+        System.out.println("Name =Rajalakshmi , Roll no = 0");
+        System.out.println("Name =Lakshmi , Roll no = 101");
+    }
+}
+
+3
+import java.util.*;
+public class Circle{
+    public static void main(String args[]){
+        
+        Scanner a =new Scanner (System. in);
+        int b=a.nextInt();
+        double area =Math.PI* (b*b);
+        double cir=Math.PI*b*2;
+        System.out.printf("Area = %.2f%n", area);
+        System.out.printf("Circumference = %.2f%n", cir);
+        
+    }
+}
