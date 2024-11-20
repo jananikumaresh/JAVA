@@ -1,0 +1,1212 @@
+Which expression will extract the substring "kap" from a string defined by String str = "kakapo"?
+
+Question 1Answer
+
+a.
+str.substring(2, 2)
+
+
+b.
+str.substring(2, 5)
+
+
+c.
+str.substring(2, 3)
+
+
+d.
+str.substring(2, 4)
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+4.    String d = "bookkeeper";
+
+5.    d.substring(1,7);
+
+6.    d = "w" + d;
+
+7.    d.append("woo");
+
+8.    System.out.println(d);
+
+
+
+What is the result? 
+
+
+
+Question 2Answer
+
+a.
+wookkeewoo
+
+
+b.
+wbookkeewoo
+
+
+c.
+wbookkeeperwoo
+
+
+d.
+Compilation fails
+
+
+e.
+wbookkeeper
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What does the following statement do?     String[] widget;
+
+Question 3Answer
+
+a.
+It declares a variable widget which may in the future hold a reference to an array of references to String objects but is initialized to null
+
+
+b.
+It creates a String object named widget
+
+
+c.
+It declares an array of references to widget objects named String
+
+
+d.
+It creates an array of length zero named widget
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the difference between
+
+String rats;
+
+and
+
+String[] rats;                 ?
+
+
+
+Question 4Answer
+
+a.
+There is no difference; both declare rats to be a reference variable
+
+
+b.
+The first initializes rats to null; the second initializes rats to an array of nulls
+
+
+c.
+The first constructs a single String object; the second constructs an array of String objects
+
+
+d.
+The first declares rats to be a reference to a String object, the second declares rats to be a reference to an array of String references
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the value of len after the following executes?
+
+
+
+String s1 = "Hey, buddy!";
+
+int len = s1.length();
+
+Question 5Answer
+
+a.
+10
+
+
+b.
+8
+
+
+c.
+12
+
+
+d.
+11
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+public class StringRef {
+
+ public static void main(String[] args) {
+
+  String s1 = "abc";
+
+  String s2 = "def";
+
+  String s3 = s2;
+
+  s2 = "ghi";
+
+  System.out.println(s1 + s2 + s3);
+
+ }
+
+}
+
+
+
+What is the result?
+
+
+
+Question 6Answer
+
+a.
+abcghidef 
+
+
+b.
+Compilation fails.
+
+
+c.
+abcdefdef 
+
+
+d.
+abcdefghi 
+
+
+e.
+abcghighi
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the code snippet:
+
+String str = new String("Hello");
+
+Which of the below mentioned is an invalid call?
+
+Question 7Answer
+
+a.
+str.replace('H','h');
+
+
+b.
+str.trim(); 
+
+
+c.
+str.append("World");
+
+
+d.
+str.substring(2); 
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Say that   names   has been declared
+
+String[] names = new String[10] ;
+
+and that further statements (not shown) have put String references into some of the slots.
+
+Which of the following fragments counts the number of non-null slots in the array?
+
+
+
+Question 8Answer
+
+a.
+int j = 0;
+
+int count = 0;
+
+while ( names[ ++j ] != null )
+
+  count++ ;
+
+
+
+
+b.
+int count = 0;
+
+for ( int j = 0; j < names.length; j++ )
+
+    if ( names[j] != null )
+
+        count++ ;
+
+
+
+
+c.
+int count = 0;
+
+while ( names[ count ] != null )
+
+{
+
+  count++ ;
+
+}
+
+
+
+
+d.
+int j = 0;
+
+for ( int count = 0; count < names.length; count++ )
+
+    if ( names[j] != null )
+
+        j++ ;
+
+
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which phrase best describes a String object after it has been constructed?
+
+Question 9Answer
+
+a.
+Write Only
+
+
+b.
+Read Only
+
+
+c.
+Inaccessible
+
+
+d.
+Changeable
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Say that   names   has been declared
+
+String[] names = new String[10] ;
+
+and that further statements (not shown) have put String references into some of the slots.
+
+Which of the following fragments prints out the slots of the array from last to first, skipping slots that contain null?
+
+
+
+Question 10Answer
+
+a.
+for ( int j = 0; j < names.length; j++ )
+
+    if ( names[j] != null )
+
+        System.out.println( names[j] );
+
+
+
+
+b.
+for ( int j = names.length; j >= 0; j++ )
+
+    if ( names[j] != null )
+
+        System.out.println( names[j] );
+
+
+
+
+c.
+for ( int j = names.length-1; j >= 0; j++ )
+
+    if ( names[j] != null )
+
+        System.out.println( names[j] );
+
+
+
+
+d.
+for ( int j = names.length; j < names.length; j++ )
+
+    if ( names[j] != null )
+
+        System.out.println( names[j] );
+
+
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the result of attempting to compile and run the following code?
+
+class MyClass {
+
+ public static void main(String[] args) {
+
+  String str1 = "str1";
+
+  String str2 = "str2";
+
+  String str3 = "str3";
+
+  str1.concat(str2);
+
+  System.out.println(str3.concat(str1));
+
+ }
+
+}
+
+
+
+Question 11Answer
+
+a.
+The program will print str3str2 when run
+
+
+b.
+The program will print str3str1str2 when run
+
+
+c.
+The program will print str3 when run
+
+
+d.
+The program will print str3str1 when run
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which statement concerning the charAt() method of the String class is true?
+
+Question 12Answer
+
+a.
+The expression "abcdef".charAt(3) is illegal. 
+
+
+b.
+The charAt() method returns a Character object. 
+
+
+c.
+The index of the first character is 1.
+
+
+d.
+expression "abcdef".charAt(3) evaluates to the character ‘d’.
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the result of attempting to compile and run the following code?
+
+public class RefEq {
+
+ public static void main(String[] args) {
+
+  String s = "ab" + "12";
+
+  String t = "ab" + 12;
+
+  String u = new String("ab12");
+
+  System.out.println((s == t) + " " + (s == u));
+
+ }
+
+}
+
+
+
+Question 13Answer
+
+a.
+The program will print true true when run
+
+
+b.
+The program will print true false when run
+
+
+c.
+The program will print false false when run
+
+
+d.
+The program will print false true when run
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the expressions will evaluate to true if preceded by the following code?
+
+String a = "hello";
+
+String b = new String(a);
+
+String c = a;
+
+char[] d = { 'h', 'e', 'l', 'l', 'o' };
+
+
+
+Question 14Answer
+
+a.
+(a == b)
+
+
+b.
+a.equals(d)
+
+
+c.
+(a == "Hello") 
+
+
+d.
+a.equals(b)
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be written to the standard output when the following program is run?
+
+import static java.lang.System.out;
+
+public class TestOutput {
+
+ public static void main(String[] args) {
+
+  String space = " ";
+
+  String composite = space + "windows" + space + space;
+
+  composite.concat("server");
+
+  String trimmed = composite.trim();
+
+  System.out.println(trimmed.length());
+
+ }
+
+}
+
+
+
+Question 15Answer
+
+a.
+7
+
+
+b.
+13
+
+
+c.
+15
+
+
+d.
+9
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following is not legal?
+
+Question 16Answer
+
+a.
+System.out.println("st" + new String('e' + 'p'));
+
+
+b.
+System.out.println('s' + 't' + 'e' + 'p'); 
+
+
+c.
+System.out.println("st".concat("ep")); 
+
+
+d.
+System.out.println("st" + "ep"); 
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What function does the trim() method of the String class perform?
+
+Question 17Answer
+
+a.
+It returns a string where the leading white space of the original string has been removed. 
+
+
+b.
+It returns a string where both the leading and trailing white space of the original string has been removed.
+
+
+c.
+It returns a string where all the white space of the original string has been removed. 
+
+
+d.
+It returns a string where the trailing white space of the original string has been removed.
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the meaning of null?
+
+Question 18Answer
+
+a.
+A reference variable that contains null is not referring to an object
+
+
+b.
+It is another name for zero
+
+
+c.
+It is a special value used to indicate an error condition
+
+
+d.
+It is the String object that contains no characters
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will the following program print when run?
+
+public class Search {
+
+ public static void main(String[] args) {
+
+  String s = "Contentment!";
+
+  int middle = s.length() / 2;
+
+  String nt = s.substring(middle - 1, middle + 1);
+
+  System.out.println(s.lastIndexOf(nt, middle));
+
+ }
+
+}
+
+
+
+Question 19Answer
+
+a.
+2
+
+
+b.
+4
+
+
+c.
+7
+
+
+d.
+5
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+11.   String x = "xyz";
+
+12.   x.toUpperCase();
+
+13.   String y = x.replace('Y', 'y');
+
+14.   y = y + "abc";
+
+15.   System.out.printlnYes;
+
+
+
+What is the result?
+
+
+
+Question 20Answer
+
+a.
+XyZabc
+
+
+b.
+Compilation fails
+
+
+c.
+abcxyz 
+
+
+d.
+xyzabc 
+
+
+e.
+abcXyZ 
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following operators cannot be used in conjunction with a String object?
+
+Question 21Answer
+
+a.
++
+
+
+b.
++=
+
+
+c.
+-
+
+
+d.
+.
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+14.    String a = "newspaper";
+
+15.    a = a.substring(5,7);
+
+16.    char b = a.charAt(1);
+
+17.    a = a + b;
+
+18.    System.out.println(a);
+
+
+
+What is the result?
+
+
+
+Question 22Answer
+
+a.
+apea 
+
+
+b.
+papp 
+
+
+c.
+app 
+
+
+d.
+apep 
+
+
+e.
+apa 
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the value of pos after the following code executes?
+
+
+
+String s1 = "ac ded ca";
+
+int pos = s1.indexOf("d");
+
+Question 23Answer
+
+a.
+3
+
+
+b.
+4
+
+
+c.
+-1
+
+
+d.
+5
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What does the following statement do?     String glarch;
+
+Question 24Answer
+
+a.
+It constructs a String object which will contain the characters "glarch" 
+
+
+b.
+It declares an array of String objects named glarch
+
+
+c.
+It constructs a String object named glarch
+
+
+d.
+It declares a reference variable glarch which may in the future refer to a String object but is now initialized to null.
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code snippet,
+
+4. String d = "bookkeeper";
+
+5. d.substring(1,7);
+
+6. d = "w" + d;
+
+7. d.append("woo");
+
+8. System.out.println(D. ;
+
+What is the result? Assume, the code given above is a portion of the code present in a method.
+
+
+
+Question 25Answer
+
+a.
+wbookkeewoo 
+
+
+b.
+An exception is thrown at runtime
+
+
+c.
+Compilation fails
+
+
+d.
+wookkeewoo 
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the expressions will evaluate to true if preceded by the following code?
+
+String str1 = "unread";
+
+String str2 = new String(str1);
+
+String str3 = str1;
+
+char[] str4 = { 'u', 'n', 'r', 'e', 'a', 'd' };
+
+
+
+Question 26Answer
+
+a.
+str1.equals(str4)
+
+
+b.
+str1.equals(str2)
+
+
+c.
+(str1 == "Unread")
+
+
+d.
+(str1 == str2)
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Say that   names   has been declared
+
+String[] names = new String[10] ;
+
+and that further statements (not shown) have put String references into some of the slots.
+
+Which of the following fragments prints out every String, but skips null references?
+
+
+
+Question 27Answer
+
+a.
+for ( int j = 0; j < names.length && names[j] != null ; j++ )
+
+    System.out.println( names[j] );
+
+
+
+
+b.
+for ( int j = 0; j < names.length; j++ )
+
+    System.out.println( names[j] );
+
+
+
+
+c.
+for ( int j = 0; names[j] != null; j++ )
+
+    System.out.println( names[j] );
+
+
+
+
+d.
+for ( int j = 0; j < names.length; j++ )
+
+    if ( names[j] != null )
+
+        System.out.println( names[j] );
+
+
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is a delimiter?
+
+Question 28Answer
+
+a.
+A delimiter is any character that may be part of a number
+
+
+b.
+A delimiter is a character that separates the tokens in a string.
+
+
+c.
+A delimiter is any character that may be part of a token
+
+
+d.
+A delimiter is the last character of a string
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How would you declare and initialize the array to declare an array of fruits?
+
+Question 29Answer
+
+a.
+String[] arrayOfFruits= ["apple", "mango", "orange"]; 
+
+
+b.
+String[] arrayOfFruits= ("apple", "mango", "orange"); 
+
+
+c.
+String[] arrayOfFruits = {"apple", "mango", "orange"};
+
+
+d.
+String[] arrayOfFruits = new String{"apple, mango, orange"}; 
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which method is not defined in the String class?
+
+Question 30Answer
+
+a.
+reverse()
+
+
+b.
+concat(String)
+
+
+c.
+hashCode()
+
+
+d.
+length()
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+13. String x = new String("xyz");
+
+14. y = "abc";
+
+15. x = x + y;
+
+
+
+How many String objects have been created?
+
+
+
+Question 31Answer
+
+a.
+4
+
+
+b.
+5
+
+
+c.
+3
+
+
+d.
+2
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following:
+
+public class TestSubstring {
+
+ public static void main(String[] args) {
+
+  String str = "international";
+
+  str = str.substring(6, 9);
+
+  char b = str.charAt(2);
+
+  str = str + b;
+
+  System.out.println(str);
+
+ }
+
+}
+
+What is the result? Assume the code given above is a portion of the code present in a method.
+
+
+
+Question 32Answer
+
+a.
+atiot 
+
+
+b.
+atioa 
+
+
+c.
+atii
+
+
+d.
+atia 
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which expression will evaluate to true?
+
+Question 33Answer
+
+a.
+"Hello There".compareTo("hello there") == 0 
+
+
+b.
+"HELLO THERE".equals("hello there") 
+
+
+c.
+("hello".concat("there")).equals("hello there") 
+
+
+d.
+"Hello there".toLowerCase().equals("hello there")
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the declaration
+
+String[] names = new String[10] ;
+
+Which of the following statements puts a reference to the String "Hello" in the last slot of the array?
+
+
+
+Question 34Answer
+
+a.
+String[ names.length-1 ] = "Hello" ;
+
+
+b.
+names[9] = "Hello" ;
+
+
+c.
+names[10] = "Hello" ;
+
+
+d.
+names[0] = "Hello" ;
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What does the following statement do?
+
+String[] names = new String[10] ;
+
+
+
+Question 35Answer
+
+a.
+It declares   names   to be a reference to an array of String references and constructs an array object which can contain references to 10 String objects
+
+
+b.
+It declares   names   to be 10 String objects
+
+
+c.
+It declares   names   to be a reference to an array of String references and constructs an array object which contains references to the 10 String objects which it also constructs.
+
+
+d.
+It declares   names   to be a reference to an array of String references and constructs an array object which contains "10" in its first slot.
