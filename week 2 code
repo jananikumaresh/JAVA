@@ -1,0 +1,62 @@
+1
+import java.util.Scanner;
+public class Alarm{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String[] input=s.split(" ");
+        int day=Integer.parseInt(input[0]);
+        boolean isVacation=Boolean.parseBoolean(input[1]);
+        if(day==2 || day==3 || day==4 || day==5 || day==6){
+            if(isVacation){
+                System.out.println("7:00");
+            }else{
+                System.out.println("5:00");
+            }
+        }else if(day==1 || day == 7){
+            if(isVacation){
+                System.out.println("9:00");
+            }else{
+                System.out.println("6:00");
+            }
+        }
+    }
+}
+
+2
+import java.util.Scanner;
+public class SequenceGenerator{
+    public static String generateTerm(int n){
+        if(n==1){
+            return "1";
+           
+        }else{
+            String previousTerm = generateTerm(n-1);
+            return previousTerm+" " + n + " "+previousTerm;
+        }
+    }
+    public static void main(String[] args){
+        Scanner scanner= new Scanner(System.in);
+        int n=scanner.nextInt();
+        System.out.println(generateTerm(n));
+        scanner.close();
+    }
+}
+
+3
+import java.util.Scanner;
+public class Numbertowords{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+       
+        String number = scanner.nextLine();
+        String[] words = {"zero","One","Two","Three","Four","Five","six","Seven","Eight","nine"};
+        for(int i=0;i<number.length();i++){
+            int digit = number.charAt(i)-'0';
+            System.out.print(words[digit]+" ");
+           
+        }
+        scanner.close();
+       
+    }
+}
