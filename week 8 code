@@ -1,0 +1,122 @@
+1
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        double radius = scanner.nextDouble();
+
+       
+        double length = scanner.nextDouble();
+
+      
+        double width = scanner.nextDouble();
+
+      
+        double base = scanner.nextDouble();
+
+       
+        double height = scanner.nextDouble();
+
+        
+        double circleArea = calculateCircleArea(radius);
+        double rectangleArea = calculateRectangleArea(length, width);
+        double triangleArea = calculateTriangleArea(base, height);
+
+        
+        System.out.printf("Area of a circle: %.2f%n", circleArea);
+        System.out.printf("Area of a Rectangle: %.2f%n", rectangleArea);
+        System.out.printf("Area of a Triangle: %.2f%n", triangleArea);
+    }
+
+    
+    public static double calculateCircleArea(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+   
+    public static double calculateRectangleArea(double length, double width) {
+        return length * width;
+    }
+public static double calculateTriangleArea(double base, double height) {
+        return 0.5 * base * height;
+    }
+}
+
+2
+import java.util.Scanner;
+
+abstract class VowelStringExtractor {
+    abstract String extractAndConcatenate(int input1, String[] input2);
+    protected boolean isVowel(char ch) {
+        ch = Character.toLowerCase(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+}
+final class VowelStringProcessor extends VowelStringExtractor {
+    @Override
+    String extractAndConcatenate(int input1, String[] input2) {
+        StringBuilder result = new StringBuilder();
+        for (String str : input2) {
+            if(str.length() > 0 && isVowel(str.charAt(0)) && isVowel(str.charAt(str.length() - 1))) {
+                result.append(str);
+            }
+        }
+        if (result.length() == 0) {
+            return "no matches found";
+        }
+        return result.toString().toLowerCase();
+    }
+}
+public class Main {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        try{
+            int input1 = sc.nextInt();
+            sc.nextLine();
+            String[] input2 = new String[input1];
+            for(int i = 0; i < input1; i++){
+                input2[i] = sc.next();
+            }
+            VowelStringExtractor extractor = new VowelStringProcessor();
+            System.out.println(extractor.extractAndConcatenate(input1, input2));
+        } catch (Exception e) {
+            System.out.println("Exception occured: " + e.getMessage());
+        } finally {
+            sc.close();
+        }
+    }
+}
+3
+class FinalExample {
+
+    // Final variable
+    final    int maxSpeed = 120;
+
+    // Final method
+    public  final void displayMaxSpeed() {
+    System.out.println("The maximum speed is: " + maxSpeed + " km/h");
+    }
+}
+
+class SubClass extends FinalExample {
+
+    
+
+    // You can create new methods here
+    public void showDetails() {
+        System.out.println("This is a subclass of FinalExample.");
+    }
+}
+
+class prog {
+    public static void main(String[] args) {
+        FinalExample obj = new FinalExample();
+        obj.displayMaxSpeed();
+
+        SubClass subObj = new SubClass();
+        subObj.showDetails();
+    }
+}
