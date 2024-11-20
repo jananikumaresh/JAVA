@@ -1,0 +1,1141 @@
+Question 1
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What are the initial capacity and load factor of HashSet?
+
+Question 1Answer
+
+a.
+16, 0.75
+
+
+b.
+32, 0.75
+
+
+c.
+10, 1.0
+
+
+d.
+32, 1.0
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Does Set permit null values?
+
+Question 2Answer
+
+a.
+Yes
+
+
+b.
+throws error
+
+
+c.
+No
+
+
+d.
+Only one
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the unique feature of LinkedHashSet?
+
+Question 3Answer
+
+a.
+The elements in the collection are linked to each other
+
+
+b.
+It provides a way to store key values with uniqueness
+
+
+c.
+It is not a valid class
+
+
+d.
+It maintains the insertion order and guarantees uniqueness
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of this method is used to change an element in a LinkedList Object?
+
+Question 4Answer
+
+a.
+change()
+
+
+b.
+set()
+
+
+c.
+redo()
+
+
+d.
+add()
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these classes implements Set interface?
+
+Question 5Answer
+
+a.
+HashSet
+
+
+b.
+ArrayList
+
+
+c.
+LinkedList
+
+
+d.
+DynamicList
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the default clone of HashSet?
+
+Question 6Answer
+
+a.
+Deep clone
+
+
+b.
+Plain clone
+
+
+c.
+Hollow clone
+
+
+d.
+Shallow clone
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the difference between length() and size() of ArrayList?
+
+Question 7Answer
+
+a.
+size() is not defined in ArrayList
+
+
+b.
+length() returns the capacity of ArrayList and size() returns the actual number of elements stored in the list
+
+
+c.
+length() and size() return the same value
+
+
+d.
+length() is not defined in ArrayList
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java code snippet?
+
+1.     import java.util.*;
+
+2.     class Linkedlist 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             LinkedList obj = new LinkedList();
+
+7.             obj.add("A");
+
+8.             obj.add("B");
+
+9.             obj.add("C");
+
+10.             obj.addFirst("D");
+
+11.             System.out.println(obj);
+
+12.         }
+
+13.     }
+
+
+
+Question 8Answer
+
+a.
+[A, B, C, D]
+
+
+b.
+[D, B, C]
+
+
+c.
+[A, B, C]
+
+
+d.
+[D, A, B, C]
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What implementation of Iterator can traverse a collection in both directions?
+
+Question 9Answer
+
+a.
+SetIterator
+
+
+b.
+ListIterator
+
+
+c.
+MapIterator
+
+
+d.
+Iterator
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*; 
+
+2.     class Output 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         { 
+
+6.             TreeSet t = new TreeSet();
+
+7.             t.add("3");
+
+8.             t.add("9");
+
+9.             t.add("1");
+
+10.             t.add("4");
+
+11.             t.add("8"); 
+
+12.             System.out.println(t);
+
+13.         }
+
+14.     }
+
+
+
+Question 10Answer
+
+a.
+[1, 3, 4, 8, 9]
+
+
+b.
+[1, 3, 5, 8, 9]
+
+
+c.
+[3, 4, 1, 8, 9]
+
+
+d.
+[9, 8, 4, 3, 1]
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the difference between TreeSet and SortedSet?
+
+Question 11Answer
+
+a.
+SortedSet is more efficient than TreeSet
+
+
+b.
+TreeSet is an interface; SortedSet is a concrete class
+
+
+c.
+SortedSet is an interface; TreeSet is a concrete class
+
+
+d.
+TreeSet is more efficient than SortedSet
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which collection class allows you to grow or shrink its size and provides indexed access to its elements, but whose methods are not synchronized?
+
+Question 12Answer
+
+a.
+java.util.LinkedHashSet
+
+
+b.
+java.util.HashSet
+
+
+c.
+ java.util.List
+
+
+d.
+java.util.ArrayList
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Arraylist 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             ArrayList obj = new ArrayList();
+
+7.             obj.add("A");
+
+8.             obj.add("B");
+
+9.             obj.add("C");
+
+10.             obj.add(1, "D");
+
+11.             System.out.println(obj);
+
+12.         }
+
+13.     }
+
+
+
+Question 13Answer
+
+a.
+[A, D, B, C]
+
+
+b.
+[A, B, C, D]
+
+
+c.
+[A, D, C]
+
+
+d.
+[A, B, C]
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the program?
+
+
+
+import java.util.*; 
+
+class I 
+
+{
+
+    public static void main (String[] args) 
+
+    {
+
+        Object i = new ArrayList().iterator(); 
+
+        System.out.print((i instanceof List)+","); 
+
+        System.out.print((i instanceof Iterator)+","); 
+
+        System.out.print(i instanceof ListIterator); 
+
+    } 
+
+}
+
+Question 14Answer
+
+a.
+Prints: false, false, false
+
+
+b.
+Prints: false, true, false
+
+
+c.
+Prints: false, false, true
+
+
+d.
+Prints: false, true, true
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Output 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             ArrayList obj = new ArrayList();
+
+7.             obj.add("A");
+
+8.             obj.ensureCapacity(3);
+
+9.             System.out.println(obj.size());
+
+10.         }
+
+11.     }
+
+
+
+Question 15Answer
+
+a.
+1
+
+
+b.
+3
+
+
+c.
+4
+
+
+d.
+2
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+ You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?
+
+Question 16Answer
+
+a.
+java.util.Collection
+
+
+b.
+java.util.Set
+
+
+c.
+java.util.List
+
+
+d.
+java.util.Map
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java code snippet?
+
+1. public class Test 
+
+2. {
+
+3.  public static void main(String[] args) 
+
+4.         {
+
+5.   Set s = new HashSet();
+
+6.   s.add(new Long(10));
+
+7.   s.add(new Integer(10));
+
+8.   for(Object object : s)
+
+9.                 {
+
+10.       System.out.println("test - "+object);
+
+11.   }
+
+12.  }
+
+13. }
+
+
+
+Question 17Answer
+
+a.
+Runtime Exception
+
+
+b.
+Test - 10
+
+Test - 10
+
+
+c.
+Compilation Failure
+
+
+d.
+Test – 10
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these methods can be used to delete the last element in a LinkedList object?
+
+Question 18Answer
+
+a.
+removeLast()
+
+
+b.
+delete()
+
+
+c.
+remove()
+
+
+d.
+deleteLast()
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How to create a TreeSet that stores values in descending order ?
+
+Question 19Answer
+
+a.
+TreeSet<Integer> set = new TreeSet<>().reverseCollection();
+
+
+b.
+TreeSet<Integer> set = new TreeSet<>(Collection.orderReverse());
+
+
+c.
+TreeSet<Integer> set = new TreeSet<>(Collections.reverseOrder());
+
+
+d.
+TreeSet<Integer> set = new TreeSet<>().reverse();
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Output 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             HashSet obj = new HashSet();
+
+7.             obj.add("A");
+
+8.             obj.add("B");
+
+9.             obj.add("C");
+
+10.             System.out.println(obj + " " + obj.size());
+
+11.         }
+
+12.     }
+
+
+
+Question 20Answer
+
+a.
+[A, B, C] 3
+
+
+b.
+ABC 3
+
+
+c.
+ABC 2
+
+
+d.
+[A, B, C] 2
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method of HashSet class is used to add elements to its object?
+
+Question 21Answer
+
+a.
+insert()
+
+
+b.
+addFirst()
+
+
+c.
+Add()
+
+
+d.
+add()
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which collection class allows you to grow or shrink its size and provides indexed access to its elements, but whose methods are not synchronized?
+
+Question 22Answer
+
+a.
+java.util.List
+
+
+b.
+java.util.LinkedHashSet
+
+
+c.
+java.util.HashSet
+
+
+d.
+java.util.ArrayList
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Linkedlist 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             LinkedList obj = new LinkedList();
+
+7.             obj.add("A");
+
+8.             obj.add("B");
+
+9.             obj.add("C");
+
+10.             obj.removeFirst();
+
+11.             System.out.println(obj);
+
+12.         }
+
+13.     }
+
+
+
+Question 23Answer
+
+a.
+[B, C]
+
+
+b.
+[A, B, C]
+
+
+c.
+[A, B]
+
+
+d.
+[A, B, C, D]
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How to sort elements of ArrayList?
+
+Question 24Answer
+
+a.
+Sorter.sortAsc(listObj);
+
+
+b.
+listObj.sort();
+
+
+c.
+Collections.sort(listObj);
+
+
+d.
+Collection.sort(listObj);
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How to remove duplicates from List?
+
+Question 25Answer
+
+a.
+HashSet<String> listToSet = duplicateList.getSet();
+
+
+b.
+HashSet<String> listToSet = Collections.convertToSet(duplicateList);
+
+
+c.
+HashSet<String> listToSet = new HashSet<String>(duplicateList);
+
+
+d.
+HashSet<String> listToSet = duplicateList.toSet();
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the output of this program?
+
+import java.util.*;
+
+    class Output 
+
+    {
+
+        public static void main(String args[]) 
+
+        {
+
+            ArrayList obj = new ArrayList();
+
+            obj.add("A");
+
+            obj.add(0, "B");
+
+            System.out.println(obj.size());
+
+        }
+
+    }
+
+Question 26Answer
+
+a.
+0
+
+
+b.
+3
+
+
+c.
+2
+
+
+d.
+1
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What differentiates a circular linked list from a normal linked list?
+
+Question 27Answer
+
+a.
+You may or may not have the ‘next’ pointer point to null in a circular linked list
+
+
+b.
+Head node is known in circular linked list
+
+
+c.
+It is faster to traverse the circular linked list
+
+
+d.
+You cannot have the ‘next’ pointer point to null in a circular linked list
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following can be used as stack,queue,list?
+
+Question 28Answer
+
+a.
+All of the mentioned
+
+
+b.
+LinkedList
+
+
+c.
+LinkedHashSet
+
+
+d.
+LinkedHashMap
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+How can we remove an object from ArrayList?
+
+Question 29Answer
+
+a.
+remove() method and using Iterator
+
+
+b.
+remove() method
+
+
+c.
+using Iterator
+
+
+d.
+delete() method
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Since Set interface in java closely resembles the mathematical set model, which of the following operations in mathematical set model can be implemented by the Set interface as well?
+
+Question 30Answer
+
+a.
+intersection
+
+
+b.
+difference
+
+
+c.
+Union
+
+
+d.
+All of the mentioned
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     import java.util.*;
+
+2.     class Output 
+
+3.     {
+
+4.         public static void main(String args[]) 
+
+5.         {
+
+6.             ArrayList obj = new ArrayList();
+
+7.             obj.add("A");
+
+8.             obj.add(0, "B");
+
+9.             System.out.println(obj.size());
+
+10.         }
+
+11.     }
+
+
+
+Question 31Answer
+
+a.
+2
+
+
+b.
+1
+
+
+c.
+Any Garbage Value
+
+
+d.
+0
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these method of ArrayList class is used to obtain present size of an object?
+
+Question 32Answer
+
+a.
+capacity()
+
+
+b.
+length()
+
+
+c.
+size()
+
+
+d.
+index()
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these standard collection classes implements a linked list data structure?
+
+Question 33Answer
+
+a.
+AbstractList
+
+
+b.
+AbstractSet
+
+
+c.
+HashSet
+
+
+d.
+LinkedList
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?
+
+Question 34Answer
+
+a.
+java.util.Map
+
+
+b.
+java.util.Set
+
+
+c.
+java.util.List
+
+
+d.
+java.util.Collection
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the functionality of the following piece of code? Select the most appropriate
+
+public void function(int data)
+
+{
+
+ int flag = 0;
+
+ if( head != null)
+
+ {
+
+  Node temp = head.getNext();
+
+  while((temp != head) && (!(temp.getItem() == data)))
+
+  {
+
+   temp = temp.getNext();
+
+   flag = 1;
+
+   break;
+
+  }
+
+ }
+
+ if(flag)
+
+  System.out.println("success");
+
+ else
+
+  System.out.println("fail");
+
+}
+
+
+
+Question 35Answer
+
+a.
+Print fail if the list is empty
+
+
+b.
+Print success if a particular element is not found
+
+
+c.
+Print fail if a particular element is not found
+
+
+d.
+Print success if a particular element is equal to 1
