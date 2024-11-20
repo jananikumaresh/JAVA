@@ -1,0 +1,1369 @@
+Question 1
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given A.java contains
+
+class A {public static void main(String... args) {}} // 1
+
+and B.java contains
+
+class B {protected static void main(String[] args) {}} // 2
+
+What is the result of attempting to compile each of the two class declarations and invoke each main method from the command line?
+
+
+
+Question 1Answer
+
+a.
+An attempt to run A from the command line fails. 
+
+
+b.
+An attempt to run B from the command line fails.
+
+
+c.
+Compile-time error at line 2. 
+
+
+d.
+Compile-time error at line 1. 
+
+Question 2
+Complete
+Marked out of 1.00
+Flag question
+Question text
+The input/output package usually used with Java is:
+
+Question 2Answer
+
+a.
+java.input
+
+
+b.
+java.file
+
+
+c.
+java.io
+
+
+d.
+java.inout
+
+Question 3
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+1.  public class WrapTest2 {
+
+2.     public static void main(String [] args) {
+
+3.       Long b = new Long(42);
+
+4.       int x = Integer.valueOf("345");
+
+5.       int x2 = (int) Integer.parseInt("345", 8);
+
+6.       int x3 = Integer.parseInt(42);
+
+7.       int x4 = Integer.parseInt("42");
+
+8.       int x5 = b.intValue();
+
+9.     }
+
+10. }
+
+
+
+Which two lines will cause compiler errors? 
+
+
+
+Question 3Answer
+
+a.
+Line 5 and 6
+
+
+b.
+Line 3 and 4
+
+
+c.
+Line 7 and 8
+
+
+d.
+Line 4 and 6
+
+Question 4
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+
+
+1.     class Output 
+
+2.     {
+
+3.         public static void main(String args[])
+
+4.         {
+
+5.      Double i = new Double(257.578123456789);  
+
+6.             float x = i.floatValue();
+
+7.             System.out.print(x);
+
+8.         }
+
+9.     }
+
+
+
+Question 4Answer
+
+a.
+257.57812
+
+
+b.
+0
+
+
+c.
+257
+
+
+d.
+257.5781235
+
+Question 5
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What happens when the constructor for FileInputStream fails to open a file for reading?
+
+Question 5Answer
+
+a.
+It throws a ArrayIndexOutOfBoundsException.
+
+
+b.
+It returns null.
+
+
+c.
+It throws a FileNotFoundException.
+
+
+d.
+It throws a DataFormatException.
+
+Question 6
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which one of the following options correctly reads a line of string from the console? 
+
+Question 6Answer
+
+a.
+String str = System.in.readLine();
+
+String str; System.in.scanf(str);
+
+
+b.
+BufferedReader br = new BufferedReader(System.in);
+
+String str = br.readLine();
+
+
+c.
+BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
+
+String str = br.readLine();
+
+
+d.
+InputStreamReader isr = new InputStreamReader (new BufferedReader(System.in)); 
+
+String str = isr.readLine();
+
+Question 7
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+
+
+1.     class Output
+
+2.     {
+
+3.         public static void main(String args[])
+
+4.         {
+
+5.      char a = (char) 98;
+
+6.             a = Character.toUpperCase(a);
+
+7.             System.out.print(a);
+
+8.         }
+
+9.     }
+
+
+
+Question 7Answer
+
+a.
+B
+
+
+b.
+b
+
+
+c.
+C
+
+
+d.
+c
+
+Question 8
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of the following opens the file "myData.stuff" for Input?
+
+Question 8Answer
+
+a.
+FileInputStream fis = new FileInputStream( "myData.stuff", true)
+
+
+b.
+DataInputStream dis = new DataInputStream( "myData.stuff" )
+
+
+c.
+FileInputStream fis = new FileInputStream( "myData.stuff")
+
+
+d.
+FileInputStream fis = new FileInputStream( new BufferedInputStream( "myData.stuff") )
+
+Question 9
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     class Output
+
+2.     {
+
+3.         public static void main(String args[])
+
+4.         {
+
+5.             String str = "true";
+
+6.             boolean x = Boolean.valueOf(str);
+
+7.             System.out.print(x);
+
+8.         }
+
+9.     }
+
+
+
+Question 9Answer
+
+a.
+Compilation Error
+
+
+b.
+True
+
+
+c.
+Runtime Error
+
+
+d.
+False
+
+Question 10
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+public class Test {
+
+ public static void main(String[] args) {
+
+  System.out.println(args.length);
+
+ }
+
+}
+
+If the above code is compiled and run as follows
+
+java Test Hello 1 2 3
+
+What would be the output?
+
+
+
+Question 10Answer
+
+a.
+5
+
+
+b.
+2
+
+
+c.
+6
+
+
+d.
+4
+
+Question 11
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+public class BoolTest {
+
+ public static void main(String[] args) {
+
+  Boolean b1 = new Boolean("false");
+
+  boolean b2;
+
+  b2 = b1.booleanValue();
+
+  if (!b2) {
+
+   b2 = true;
+
+   System.out.print("x ");
+
+  }
+
+  if (b1 & b2) {
+
+   System.out.print("y ");
+
+  }
+
+  System.out.println("z");
+
+ }
+
+}
+
+
+
+What is the result?
+
+
+
+Question 11Answer
+
+a.
+z
+
+
+b.
+y z
+
+
+c.
+Compilation fails.
+
+
+d.
+x z
+
+
+e.
+x y z
+
+Question 12
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these is used to perform all input & output operations in Java?
+
+Question 12Answer
+
+a.
+Methods
+
+
+b.
+streams
+
+
+c.
+Variables
+
+
+d.
+classes
+
+Question 13
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+public class NFE {
+
+ public static void main(String[] args) {
+
+  String s = "42";
+
+  try {
+
+   s = s.concat(".5");
+
+   double d = Double.parseDouble(s);
+
+   s = Double.toString(d);
+
+   int x = (int) Math.ceil(Double.valueOf(s).doubleValue());
+
+   System.out.println(x);
+
+  } catch (NumberFormatException e) {
+
+   System.out.println("bad number");
+
+  }
+
+ }
+
+}
+
+
+
+What is the result?
+
+
+
+Question 13Answer
+
+a.
+Compilation fails.
+
+
+b.
+bad number
+
+
+c.
+42
+
+
+d.
+43
+
+
+e.
+42.5
+
+Question 14
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the ancestor class of all character-oriented input streams?
+
+Question 14Answer
+
+a.
+FileReader
+
+
+b.
+Reader
+
+
+c.
+WeeklyReader
+
+
+d.
+BufferedReader
+
+Question 15
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+11.    try {
+
+12.     Float f1 = new Float("3.0");
+
+13.     int x = f1.intValue();
+
+14.     byte b = f1.byteValue();
+
+15.     double d = f1.doubleValue();
+
+16.     System.out.println(x + b + d);
+
+17.    }
+
+18.    catch (NumberFormatException e) {
+
+19.     System.out.println("bad number");
+
+20.   } 
+
+
+
+What is the result? 
+
+
+
+Question 15Answer
+
+a.
+Compilation fails on line 13.
+
+
+b.
+9
+
+
+c.
+bad number
+
+
+d.
+Compilation fails on line 14.
+
+Question 16
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     class Output 
+
+2.     {
+
+3.         public static void main(String args[]) 
+
+4.         {
+
+5.             Long i = new Long(256);  
+
+6.             System.out.print(i.hashCode());
+
+7.         }
+
+8.     }
+
+
+
+Question 16Answer
+
+a.
+257
+
+
+b.
+256
+
+
+c.
+256
+
+
+d.
+256
+
+Question 17
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+1.  public class WrapTest3 {
+
+2.     public static void main(String [] args) {
+
+3.       String s = "98.6";
+
+4.       // insert code here
+
+5.     }
+
+6.  }
+
+
+
+Which line inserted at line 4 will cause compiler errors?
+
+
+
+Question 17Answer
+
+a.
+float f1 = Float.floatValue(s);
+
+
+b.
+float f6 = (float) Double.parseDouble("3.14");
+
+
+c.
+float f3 = new Float(3.14f).floatValue();
+
+
+d.
+float f5 = Float.valueOf(s).floatValue();
+
+Question 18
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     class Output 
+
+2.     {
+
+3.         public static void main(String args[]) 
+
+4.         {
+
+5.             Integer i = new Integer(257);  
+
+6.             byte x = i.byteValue();
+
+7.             System.out.print(x);
+
+8.         }
+
+9.     }
+
+
+
+Question 18Answer
+
+a.
+1
+
+
+b.
+257
+
+
+c.
+0
+
+
+d.
+256
+
+Question 19
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the below mentioned code and the command-line invocation as,
+
+java CommandArgsFive 9 8 7 6
+
+public class CommandArgsFive {
+
+ public static void main(String[] args) {
+
+  Integer i1 = new Integer(args[1]);
+
+  Integer i2 = new Integer(args[2]);
+
+  Integer i3 = new Integer(args[3]);
+
+  Integer i4 = new Integer(args[4]);
+
+  System.out.print(" args[3] = " + i3);
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 19Answer
+
+a.
+args[3] = 8 
+
+
+b.
+An exception is thrown at runtime
+
+
+c.
+args[3] = 7 
+
+
+d.
+args[3] = null 
+
+Question 20
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+1.  public class WrapTest3 {
+
+2.     public static void main(String [] args) {
+
+3.       String s = "98.6";
+
+4.       // insert code here
+
+5.     }
+
+6.  }
+
+
+
+Which line inserted at line 4 will cause compiler errors?
+
+
+
+Question 20Answer
+
+a.
+float f3 = new Float(3.14f).floatValue();
+
+
+b.
+float f6 = (float) Double.parseDouble("3.14");
+
+
+c.
+float f5 = Float.valueOf(s).floatValue();
+
+
+d.
+float f2 = Float.valueOf(s);
+
+Question 21
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following code:
+
+public class Foo {
+
+ public static void main(String[] args) {
+
+  System.out.println(args[1]);
+
+ }
+
+}
+
+If the above code is compiled and run as follows
+
+java Foo Apples 9 8 7
+
+What would be the output?
+
+Question 21Answer
+
+a.
+Foo
+
+
+b.
+9
+
+
+c.
+java
+
+
+d.
+Apples
+
+Question 22
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the below mentioned code and the command-line invocation as,
+
+java CommandArgs 1 2 3 4
+
+public class CommandArgs {
+
+ public static void main(String[] args) {
+
+  String s1 = args[1];
+
+  String s2 = args[2];
+
+  String s3 = args[3];
+
+  String s4 = args[4];
+
+  System.out.print(" args[2] = " + s2);
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 22Answer
+
+a.
+An exception is thrown at runtime
+
+
+b.
+args[2] = 3 
+
+
+c.
+args[2] = 2 
+
+
+d.
+args[2] = 1 
+
+Question 23
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these is a wrapper for simple data type char?
+
+Question 23Answer
+
+a.
+String
+
+
+b.
+Character
+
+
+c.
+Float
+
+
+d.
+Integer
+
+Question 24
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the below mentioned code and the command-line invocation as,
+
+java CommandArgsFour 9 6 3
+
+public class CommandArgsFour {
+
+ public static void main(String[] argh) {
+
+  String[] args;
+
+  int a;
+
+  a = argh.length;
+
+  for (int b = 1; b < a; b++) {
+
+   System.out.print(" " + argh[b]);
+
+  }
+
+ }
+
+}
+
+What is the result?
+
+Question 24Answer
+
+a.
+9 6
+
+
+b.
+An exception is thrown at runtime 
+
+
+c.
+6 3
+
+
+d.
+null null 
+
+Question 25
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What will be the output of the following Java program?
+
+1.     class Output 
+
+2.     {
+
+3.         public static void main(String args[]) 
+
+4.         {
+
+5.             Integer i = new Integer(257);  
+
+6.             float x = i.floatValue();
+
+7.             System.out.print(x);
+
+8.         }
+
+9.     }
+
+
+
+Question 25Answer
+
+a.
+257
+
+
+b.
+1
+
+
+c.
+0
+
+
+d.
+257
+
+Question 26
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What happens if readLine() encounters an error?
+
+Question 26Answer
+
+a.
+It throws an IOException.
+
+
+b.
+Nothing; the program must examine the returned value to see if it makes sense.
+
+
+c.
+The program immediately halts.
+
+
+d.
+It returns null
+
+Question 27
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the following,
+
+
+
+1.  public class WrapTest3 {
+
+2.     public static void main(String [] args) {
+
+3.       String s = "98.6";
+
+4.       // insert code here
+
+5.     }
+
+6.  }
+
+
+
+Which line inserted at line 4 will cause compiler errors?
+
+
+
+Question 27Answer
+
+a.
+float f3 = new Float(3.14f).floatValue();
+
+
+b.
+float f5 = Float.valueOf(s).floatValue();
+
+
+c.
+float f4 = Float.parseFloat(1.23f);
+
+
+d.
+float f6 = (float) Double.parseDouble("3.14");
+
+Question 28
+Complete
+Marked out of 1.00
+Flag question
+Question text
+_____  class is used to increase the efficiency of input operations.
+
+Question 28Answer
+
+a.
+FileInputStream
+
+
+b.
+BufferedInputStream
+
+
+c.
+DataInputStream
+
+
+d.
+PipeInputStream
+
+Question 29
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the below mentioned code 
+
+and the command-line invocation as,
+
+
+
+java CommandArgsThree 1 2 3
+
+
+
+public class CommandArgsThree {
+
+ public static void main(String[] args) {
+
+  String[][] argCopy = new String[2][2];
+
+  int x;
+
+  argCopy[0] = args;
+
+  x = argCopy[0].length;
+
+  for (int y = 0; y < x; y++) {
+
+   System.out.print(" " + argCopy[0][y]);
+
+  }
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 29Answer
+
+a.
+1 2
+
+
+b.
+0 0
+
+
+c.
+0 0 0
+
+
+d.
+1 2 3
+
+Question 30
+Complete
+Marked out of 1.00
+Flag question
+Question text
+A program uses the FileWriter constructor with the string "newFile.txt". What happens if "newFile.txt" already exists?
+
+Question 30Answer
+
+a.
+An exception is thrown.
+
+
+b.
+The program exits.
+
+
+c.
+The existing file is erased and replace with a new, empty one.
+
+
+d.
+The constructor returns null.
+
+Question 31
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Choose the correct option to fill the below code
+
+import java.io.BufferedReader;
+
+import java.io.IOException;
+
+import java.io.InputStreamReader;
+
+public class Test
+
+{
+
+ public static void main(String[] args) throws IOException
+
+ {
+
+ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+ Integer a = //Fill your code to read value for this.
+
+ System.out.println(name);
+
+ }
+
+}
+
+Question 31Answer
+
+a.
+Integer.parseInteger(br.readLine());
+
+
+b.
+Integer.parseInteger(br.read());
+
+
+c.
+Integer.parseInt(br.readLine());
+
+
+d.
+Int.parseInteger(br.readLine());
+
+Question 32
+Complete
+Marked out of 1.00
+Flag question
+Question text
+What is the DataInputStream method that reads an int value?
+
+Question 32Answer
+
+a.
+readInt()
+
+
+b.
+read()
+
+
+c.
+ReadInteger()
+
+
+d.
+ReadInt()
+
+Question 33
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Given the below mentioned code
+
+and the command-line invocation as,
+
+java CommandArgsTwo 1 2 3
+
+public class CommandArgsTwo {
+
+ public static void main(String[] argh) {
+
+  String[] args;
+
+  int x;
+
+  x = argh.length;
+
+  for (int y = 1; y <= x; y++) {
+
+   System.out.print(" " + argh[y]);
+
+  }
+
+ }
+
+}
+
+What is the result?
+
+
+
+Question 33Answer
+
+a.
+0 0 0
+
+
+b.
+An exception is thrown at runtime
+
+
+c.
+1 2 3
+
+
+d.
+0 1 2 
+
+Question 34
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Which of these is a super class of Character wrapper?
+
+Question 34Answer
+
+a.
+Long
+
+
+b.
+Float
+
+
+c.
+Digits
+
+
+d.
+Number
+
+Question 35
+Complete
+Marked out of 1.00
+Flag question
+Question text
+Can data flow through a given stream in both directions?
+
+Question 35Answer
+
+a.
+Yes; but only one direction at a time.
+
+
+b.
+No; a stream has one direction only, input or output.
+
+
+c.
+No; streams only work for output.
+
+
+d.
+Yes; only one stre
